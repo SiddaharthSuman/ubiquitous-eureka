@@ -25,9 +25,25 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job
+  debug:
+    runs-on: ubuntu-latest
+    environment: github-pages
+    steps:
+      - name: Debug
+        run: |
+          echo "::group::Variables context"
+          echo "${{ toJSON(vars) }}"
+          echo "::endgroup::"
+          echo "::group::ENV context"
+          echo "${{ toJSON(env) }}"
+          echo "::endgroup::"
+          echo "::group::ENV context"
+          echo "BASE PATH = $NEXT_PUBLIC_BASE_PATH"
+          echo "::endgroup::"
+    # Build job
   build:
     runs-on: ubuntu-latest
+    environment: github-pages
     strategy:
       matrix:
         node-version: [23]
@@ -61,6 +77,9 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: pnpm install
+      - name: Create env file
+        run: |
+          echo "NEXT_PUBLIC_BASE_PATH=${{vars.NEXT_PUBLIC_BASE_PATH}}" > .env
       - name: Build with Next.js
         run: pnpm build
       - name: Upload artifact
