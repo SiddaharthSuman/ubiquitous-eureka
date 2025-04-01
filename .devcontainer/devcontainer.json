@@ -1,0 +1,36 @@
+{
+    "name": "Next.js Dev Container",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": ".."
+    },
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "editor.formatOnSave": true,
+          "terminal.integrated.shell.linux": "/bin/bash"
+        //   "editor.codeActionsOnSave": {
+        //     "source.fixAll.eslint": true
+        //   }
+        },
+        "extensions": [
+            "dbaeumer.vscode-eslint",
+            "esbenp.prettier-vscode",
+            "ms-vscode.vscode-typescript-next",
+            "wix.vscode-import-cost",
+            "eamodio.gitlens",
+            "oderwat.indent-rainbow",
+            "christian-kohler.npm-intellisense",
+            "sibiraj-s.vscode-scss-formatter",
+            "mrmlnc.vscode-scss",
+            "Gruntfuggly.todo-tree"
+        ]
+      }
+    },
+    "forwardPorts": [3000],
+    "postCreateCommand": "pnpm dev",
+    "remoteUser": "node",
+    "mounts": [
+      "source=${localWorkspaceFolder}/app,target=/workspace/app,type=bind"
+    ]
+  }
