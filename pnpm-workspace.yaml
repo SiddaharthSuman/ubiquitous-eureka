@@ -1,3 +1,5 @@
 onlyBuiltDependencies:
-  - "@parcel/watcher"
-  - "sharp"
+  - '@parcel/watcher'
+  - core-js-pure
+  - esbuild
+  - sharp

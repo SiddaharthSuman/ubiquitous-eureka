@@ -2,11 +2,13 @@
 import standardScss from 'stylelint-config-standard-scss';
 import recessOrder from 'stylelint-config-recess-order';
 import prettier from 'stylelint-prettier';
+import stylelintUseLogical from 'stylelint-use-logical';
+import highPerformanceAnim from 'stylelint-high-performance-animation';
 
 const stylelintConfig = {
   extends: [standardScss, recessOrder, prettier],
   files: ['**/*.scss'],
-  plugins: [prettier],
+  plugins: [prettier, stylelintUseLogical, highPerformanceAnim],
   rules: {
     // overrides: [
     //   {
@@ -16,6 +18,8 @@ const stylelintConfig = {
     //     },
     //   },
     // ],
+    'csstools/use-logical': 'always',
+    'plugin/no-low-performance-animation-properties': true,
     'prettier/prettier': true,
     'scss/at-rule-no-unknown': [
       true,

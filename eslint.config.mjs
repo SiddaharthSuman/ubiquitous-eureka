@@ -8,6 +8,7 @@ import reactHooks from 'eslint-plugin-react-hooks';
 import typescriptSortKeys from 'eslint-plugin-typescript-sort-keys';
 import sortDestructureKeys from 'eslint-plugin-sort-destructure-keys';
 import importPlugin from 'eslint-plugin-import';
+import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -16,10 +17,21 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
+// Process the Next.js extended configs to remove any duplicate jsx-a11y plugin definitions.
+const nextConfigs = compat
+  .extends('next/core-web-vitals', 'next/typescript')
+  .map((cfg) => {
+    if (cfg.plugins && cfg.plugins['jsx-a11y']) {
+      delete cfg.plugins['jsx-a11y'];
+    }
+    return cfg;
+  });
 
-  // Add sort-keys plugin
+const eslintConfig = [
+  jsxA11yPlugin.flatConfigs.recommended,
+  ...nextConfigs,
+  // ...compat.extends('next/core-web-vitals', 'next/typescript'),
+
   {
     languageOptions: {
       globals: {
