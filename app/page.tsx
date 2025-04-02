@@ -1,17 +1,19 @@
-import Image from "next/image";
-import styles from "./page.module.scss";
+import Image from 'next/image';
+
+import styles from './page.module.scss';
+import { Test } from './test';
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
         <Image
-          className={styles.logo}
-          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/next.svg`}
-          alt="Next.js logo"
-          width={180}
-          height={38}
           priority
+          alt="Next.js logo"
+          className={styles.logo}
+          height={38}
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/next.svg`}
+          width={180}
         />
         <ol>
           <li>
@@ -19,28 +21,35 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
+        <Test
+          a="world"
+          z="hello"
+          onClick={() => {
+            console.log('clicked');
+          }}
+        />
 
         <div className={styles.ctas}>
           <a
             className={styles.primary}
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
             rel="noopener noreferrer"
+            target="_blank"
           >
             <Image
-              className={styles.logo}
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/vercel.svg`}
               alt="Vercel logomark"
-              width={20}
+              className={styles.logo}
               height={20}
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/vercel.svg`}
+              width={20}
             />
             Deploy now
           </a>
           <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
             className={styles.secondary}
+            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             Read our docs
           </a>
@@ -49,43 +58,43 @@ export default function Home() {
       <footer className={styles.footer}>
         <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
           rel="noopener noreferrer"
+          target="_blank"
         >
           <Image
             aria-hidden
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/file.svg`}
             alt="File icon"
-            width={16}
             height={16}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/file.svg`}
+            width={16}
           />
           Learn
         </a>
         <a
           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
           rel="noopener noreferrer"
+          target="_blank"
         >
           <Image
             aria-hidden
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/window.svg`}
             alt="Window icon"
-            width={16}
             height={16}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/window.svg`}
+            width={16}
           />
           Examples
         </a>
         <a
           href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
           rel="noopener noreferrer"
+          target="_blank"
         >
           <Image
             aria-hidden
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/globe.svg`}
             alt="Globe icon"
-            width={16}
             height={16}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/globe.svg`}
+            width={16}
           />
           Go to nextjs.org →
         </a>
