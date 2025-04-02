@@ -21,13 +21,7 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
-        <Test
-          a="world"
-          z="hello"
-          onClick={() => {
-            console.log('clicked');
-          }}
-        />
+        <Test a="world" z="hello" />
 
         <div className={styles.ctas}>
           <a

@@ -1,13 +1,12 @@
 // Before saving
 interface TestProps {
   a: string;
-  onClick: () => void;
   z: string;
 }
 
-export function Test({ a, onClick, z }: TestProps) {
+export function Test({ a, z }: TestProps) {
   return (
-    <div onClick={onClick}>
+    <div>
       {z}
       {a}
     </div>
