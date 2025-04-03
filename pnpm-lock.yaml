@@ -93,6 +93,9 @@ importers:
       stylelint:
         specifier: ^16.17.0
         version: 16.17.0(typescript@5.8.2)
+      stylelint-config-css-modules:
+        specifier: ^4.4.0
+        version: 4.4.0(stylelint@16.17.0(typescript@5.8.2))
       stylelint-config-recess-order:
         specifier: ^6.0.0
         version: 6.0.0(stylelint@16.17.0(typescript@5.8.2))
@@ -2379,6 +2382,11 @@ packages:
         optional: true
       babel-plugin-macros:
         optional: true
+
+  stylelint-config-css-modules@4.4.0:
+    resolution: {integrity: sha512-J93MtxPjRzs/TjwbJ5y9SQy4iIqULXwL1CF1yx2tQCJfS/VZUcDAmoGOwqlLbhHXSQtZO5XQiA75NVWUR3KDCQ==}
+    peerDependencies:
+      stylelint: ^14.5.1 || ^15.0.0 || ^16.0.0
 
   stylelint-config-recess-order@6.0.0:
     resolution: {integrity: sha512-1KqrttqpIrCYFAVQ1/bbgXo7EvvcjmkxxmnzVr+U66Xr2OlrNZqQ5+44Tmct6grCWY6wGTIBh2tSANqcmwIM2g==}
@@ -5055,6 +5063,12 @@ snapshots:
     dependencies:
       client-only: 0.0.1
       react: 19.1.0
+
+  stylelint-config-css-modules@4.4.0(stylelint@16.17.0(typescript@5.8.2)):
+    dependencies:
+      stylelint: 16.17.0(typescript@5.8.2)
+    optionalDependencies:
+      stylelint-scss: 6.11.1(stylelint@16.17.0(typescript@5.8.2))
 
   stylelint-config-recess-order@6.0.0(stylelint@16.17.0(typescript@5.8.2)):
     dependencies:

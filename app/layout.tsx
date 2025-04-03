@@ -1,6 +1,17 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
-import './globals.scss';
+import { Yanone_Kaffeesatz } from 'next/font/google';
+import { Container } from '@mui/material';
+
+import './styles/globals.scss';
+import ThemeRegistry from './themes/ThemeRegistry';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+
+const playfair = Yanone_Kaffeesatz({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+});
 
 const geistSans = Geist({
   subsets: ['latin'],
@@ -24,8 +35,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <head>
+        <meta content="initial-scale=1, width=device-width" name="viewport" />
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable}`}
+      >
+        <ThemeRegistry>
+          <Header />
+          <Container component={'main'} maxWidth="lg">
+            {children}
+          </Container>
+          <Footer />
+        </ThemeRegistry>
       </body>
     </html>
   );
