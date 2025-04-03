@@ -9,6 +9,7 @@ import typescriptSortKeys from 'eslint-plugin-typescript-sort-keys';
 import sortDestructureKeys from 'eslint-plugin-sort-destructure-keys';
 import importPlugin from 'eslint-plugin-import';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
+import eslintPluginJsonc from 'eslint-plugin-jsonc';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -32,6 +33,7 @@ const eslintConfig = [
   ...nextConfigs,
   // ...compat.extends('next/core-web-vitals', 'next/typescript'),
 
+  ...eslintPluginJsonc.configs['flat/recommended-with-jsonc'],
   {
     languageOptions: {
       globals: {
