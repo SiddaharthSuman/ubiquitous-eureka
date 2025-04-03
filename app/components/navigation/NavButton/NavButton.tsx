@@ -8,7 +8,7 @@ const NavButton = styled(Button)(({}) => ({
     color: '#5e35b1',
   },
   color: 'black',
-  fontSize: '1.25rem',
+  fontSize: '1rem',
   fontWeight: 500,
   padding: '8px 16px',
   textTransform: 'none',

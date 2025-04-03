@@ -1,0 +1,29 @@
+.submenuDiv {
+  position: fixed;
+  z-index: -1;
+
+  // visibility: hidden;
+  inline-size: 100%;
+  margin-block-start: 82px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.submenuOpen {
+  // visibility: visible;
+  z-index: 100;
+  opacity: 100;
+}
+
+.submenuContainer {
+  // display: 'flex';
+  // flex-direction: column;
+  // padding-inline: 48px;
+
+  // color: white;
+  // background-color: white;
+  // border-radius: 20px;
+
+  // px: '40px',
+  // py: 3,
+}

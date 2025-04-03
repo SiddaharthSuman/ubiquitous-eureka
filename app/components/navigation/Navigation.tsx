@@ -5,18 +5,17 @@ import {
   Button,
   ButtonProps,
   Container,
-  Popper,
   styled,
   Toolbar,
   Typography,
   TypographyProps,
 } from '@mui/material';
-import { MouseEvent } from 'react';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 import NavButton from './NavButton/NavButton';
 import StyledAppBar from './StyledAppBar/StyledAppBar';
 import styles from './Navigation.module.scss';
+import Submenu from './Submenu/Submenu';
 
 interface NavigationProps {
   menuItems: Array<{
@@ -28,7 +27,8 @@ interface NavigationProps {
 
 const StyledLogo = styled(Typography)<TypographyProps>(({}) => ({
   fontFamily: 'var(--font-playfair)',
-  fontSize: '3rem',
+  fontSize: '2.5rem',
+  lineHeight: 1,
   paddingInline: '1rem',
 }));
 
@@ -37,7 +37,6 @@ const DemoButton = styled(Button)<ButtonProps>(({}) => ({
     backgroundColor: '#0d1752',
   },
   backgroundColor: '#1a237e',
-  borderRadius: '4px',
   color: 'white',
   fontWeight: 500,
   marginInlineStart: 'auto',
@@ -45,49 +44,55 @@ const DemoButton = styled(Button)<ButtonProps>(({}) => ({
   textTransform: 'none',
 }));
 
-const handleProductsClick = (event: MouseEvent) => {
-  console.log('clicked on ', event.target);
-};
-
-const handleOtherClick = (event: MouseEvent) => {
-  console.log('clicked on other ', event.target);
-};
-
 const Navigation = ({ menuItems }: NavigationProps) => {
-  const logoRef = useRef<HTMLDivElement | null>(null);
+  const [open, setOpen] = useState(false);
+  const closeTimer = useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseOut = () => {
+    // console.log('mouse is out');
+    closeTimer.current = setTimeout(() => {
+      setOpen(false);
+      closeTimer.current = null;
+    }, 100);
+  };
+  const handleMouseHover = () => {
+    // console.log('mouse is in');
+    if (closeTimer.current) {
+      clearTimeout(closeTimer.current);
+      closeTimer.current = null;
+    }
+    setOpen(true);
+  };
 
   return (
-    <StyledAppBar position="fixed">
-      <Container maxWidth="lg">
-        <Toolbar disableGutters className={styles.toolbar}>
-          <StyledLogo ref={logoRef} component="div" variant="h6">
-            Biogentic
-          </StyledLogo>
-          <Box className={styles.menuGroup}>
-            {menuItems.map((item) => (
-              <NavButton
-                key={item.title}
-                onClick={
-                  item.title === 'Products'
-                    ? handleProductsClick
-                    : handleOtherClick
-                }
-              >
-                {item.title}
-              </NavButton>
-            ))}
-          </Box>
-          <DemoButton variant="contained">Book a Demo</DemoButton>
-        </Toolbar>
-      </Container>
-      {logoRef.current && (
-        <Popper anchorEl={logoRef.current} id={'id'} open={true}>
-          <Box sx={{ bgcolor: 'background.paper', border: 1, p: 1 }}>
-            The content of the Popper.
-          </Box>
-        </Popper>
-      )}
-    </StyledAppBar>
+    <>
+      <Submenu
+        open={open}
+        onMouseOut={handleMouseOut}
+        onMouseOver={handleMouseHover}
+      />
+      <StyledAppBar position="fixed">
+        <Container fixed>
+          <Toolbar disableGutters className={styles.toolbar}>
+            <StyledLogo component="div" variant="h6">
+              Biogentic
+            </StyledLogo>
+            <Box className={styles.menuGroup}>
+              {menuItems.map((item) => (
+                <NavButton
+                  key={item.title}
+                  onMouseOut={handleMouseOut}
+                  onMouseOver={handleMouseHover}
+                >
+                  {item.title}
+                </NavButton>
+              ))}
+            </Box>
+            <DemoButton variant="contained">Book a Demo</DemoButton>
+          </Toolbar>
+        </Container>
+      </StyledAppBar>
+    </>
   );
 };
 
