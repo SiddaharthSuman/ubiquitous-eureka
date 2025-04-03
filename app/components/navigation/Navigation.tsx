@@ -20,10 +20,26 @@ import Submenu from './Submenu/Submenu';
 interface NavigationProps {
   menuItems: Array<{
     link: string;
-    submenu?: Array<{ link: string; title: string }>;
+    submenu?: Array<
+      | { link: string; title: string }
+      | {
+          columnSize: number;
+          items: Array<{
+            description: string;
+            hasImage: boolean;
+            icon: string;
+            imgUrl?: string;
+            title: string;
+          }>;
+        }
+    >;
     title: string;
   }>;
 }
+
+// interface NavigationProps {
+//   menuItems: unknown;
+// }
 
 const StyledLogo = styled(Typography)<TypographyProps>(({}) => ({
   fontFamily: 'var(--font-playfair)',

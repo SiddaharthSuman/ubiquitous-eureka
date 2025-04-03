@@ -11,7 +11,10 @@
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "json",
+    "jsonc",
+    "json5"
   ],
 
   // Respect your project's Prettier config
