@@ -64,15 +64,13 @@ const Navigation = ({ menuItems }: NavigationProps) => {
   const menuParent = useRef<HTMLElement>(null);
 
   const handleMouseOut = () => {
-    // console.log('mouse is out');
     closeTimer.current = setTimeout(() => {
       setOpen(false);
-      setSelectedSubmenu(null);
       closeTimer.current = null;
     }, 100);
   };
+
   const handleMouseHover = (event: MouseEvent<HTMLElement>) => {
-    console.log('mouse is in', menuParent.current!.contains(event.target as Node));
     if (closeTimer.current) {
       clearTimeout(closeTimer.current);
       closeTimer.current = null;
@@ -81,13 +79,15 @@ const Navigation = ({ menuItems }: NavigationProps) => {
     if (menuParent.current?.contains(event.target as Node)) {
       const buttonText = (event.target as HTMLElement).textContent;
       const menuItem = menuItems.find((item) => item.title == buttonText);
-      console.log('corresponding submenu', menuItem?.submenu);
+
       if (menuItem?.submenu) {
         setSelectedSubmenu(menuItem?.submenu);
+        setOpen(true);
+      } else {
+        // if no submenu, close the submenu
+        handleMouseOut();
       }
     }
-
-    setOpen(true);
   };
 
   return (

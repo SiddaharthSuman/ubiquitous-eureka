@@ -1,19 +1,35 @@
 import { Box, Typography } from '@mui/material';
-import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
+
+import DynamicIcon from '../../DynamicIcon/DynamicIcon';
 
 interface SubmenuItemProps {
   description: string;
+  icon: string;
   title: string;
 }
 
-const SubmenuItem = ({ description, title }: SubmenuItemProps) => {
+const SubmenuItem = ({ description, icon, title }: SubmenuItemProps) => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsActive(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsActive(false);
+  };
+
   return (
     /* Individual menu item container */
-    <Box sx={{ display: 'flex', flexDirection: 'row' }}>
+    <Box
+      sx={{ cursor: 'pointer', display: 'flex', flexDirection: 'row' }}
+      onMouseOut={handleMouseOut}
+      onMouseOver={handleMouseOver}
+    >
       {/* Image */}
       <Box display={'flex'} my={1} pr={1}>
-        <Image alt="placeholder" height={20} src="https://via.placeholder.com/150" width={20} />
+        <DynamicIcon active={isActive} iconName={icon} />
       </Box>
       {/* Title and desc */}
       <Box>

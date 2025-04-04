@@ -33,11 +33,9 @@ interface SubmenuProps {
 }
 
 const Submenu = ({ onMouseOut, onMouseOver, open, submenuItems }: SubmenuProps) => {
-  console.log('received submenu', submenuItems);
-
-  if (!submenuItems) {
-    return null;
-  }
+  // if (!submenuItems) {
+  //   return null;
+  // }
 
   return (
     <Box className={`${styles.submenuDiv} ${open && `${styles.submenuOpen}`}`}>
@@ -48,7 +46,7 @@ const Submenu = ({ onMouseOut, onMouseOver, open, submenuItems }: SubmenuProps) 
         onMouseOver={onMouseOver}
       >
         <Grid container sx={{ px: 2 }}>
-          {submenuItems.map((submenuItem, index) => (
+          {submenuItems?.map((submenuItem, index) => (
             <Grid key={index} size={submenuItem.columnSize}>
               <Typography mb={2} sx={{ color: 'black' }} variant="h6">
                 {submenuItem.title}
@@ -61,7 +59,12 @@ const Submenu = ({ onMouseOut, onMouseOver, open, submenuItems }: SubmenuProps) 
                 }}
               >
                 {submenuItem.items.map((item, index) => (
-                  <SubmenuItem key={index} description={item.description} title={item.title} />
+                  <SubmenuItem
+                    key={index}
+                    description={item.description}
+                    icon={item.icon}
+                    title={item.title}
+                  />
                 ))}
               </Box>
             </Grid>

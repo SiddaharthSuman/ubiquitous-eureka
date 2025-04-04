@@ -6,7 +6,7 @@
   inline-size: 100%;
   margin-block-start: 82px;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .submenuOpen {
