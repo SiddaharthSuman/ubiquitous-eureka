@@ -4,9 +4,10 @@ import recessOrder from 'stylelint-config-recess-order';
 import prettier from 'stylelint-prettier';
 import stylelintUseLogical from 'stylelint-use-logical';
 import highPerformanceAnim from 'stylelint-high-performance-animation';
+import cssModules from 'stylelint-config-css-modules';
 
 const stylelintConfig = {
-  extends: [standardScss, recessOrder, prettier],
+  extends: [standardScss, recessOrder, prettier, cssModules],
   files: ['**/*.scss'],
   plugins: [prettier, stylelintUseLogical, highPerformanceAnim],
   rules: {

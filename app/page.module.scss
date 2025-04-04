@@ -9,7 +9,7 @@
   grid-template-rows: 20px 1fr 20px;
   gap: 64px;
   place-items: center center;
-  min-height: 100svh;
+  min-block-size: 100svh;
   padding: 80px;
   font-family: var(--font-geist-sans);
 }
@@ -32,7 +32,7 @@
 }
 
 .main ol {
-  padding-left: 0;
+  padding-inline-start: 0;
   margin: 0;
   font-family: var(--font-geist-mono);
   font-size: 14px;
@@ -42,7 +42,7 @@
 }
 
 .main li:not(:last-of-type) {
-  margin-bottom: 8px;
+  margin-block-end: 8px;
 }
 
 .main code {
@@ -58,11 +58,12 @@
   gap: 16px;
 }
 
+/* stylelint-disable plugin/no-low-performance-animation-properties */
 .ctas a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 48px;
+  block-size: 48px;
   padding: 0 20px;
   font-size: 16px;
   font-weight: 500;
@@ -85,7 +86,7 @@ a.primary {
 }
 
 a.secondary {
-  min-width: 158px;
+  min-inline-size: 158px;
   border-color: var(--gray-alpha-200);
 }
 
@@ -126,7 +127,7 @@ a.secondary {
 @media (width <= 600px) {
   .page {
     padding: 32px;
-    padding-bottom: 80px;
+    padding-block-end: 80px;
   }
 
   .main {
@@ -142,13 +143,13 @@ a.secondary {
   }
 
   .ctas a {
-    height: 40px;
+    block-size: 40px;
     padding: 0 16px;
     font-size: 14px;
   }
 
   a.secondary {
-    min-width: auto;
+    min-inline-size: auto;
   }
 
   .footer {
