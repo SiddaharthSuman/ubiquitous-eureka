@@ -1,7 +1,8 @@
-import { Box, Container, styled, ContainerProps } from '@mui/material';
+import { Box, Container, styled, ContainerProps, Grid, Typography } from '@mui/material';
 import React, { MouseEventHandler } from 'react';
 
-import NavButton from '../NavButton/NavButton';
+// import NavButton from '../NavButton/NavButton';
+import SubmenuItem from '../SubmenuItem/SubmenuItem';
 
 import styles from './Submenu.module.scss';
 
@@ -18,9 +19,26 @@ interface SubmenuProps {
   onMouseOut: MouseEventHandler;
   onMouseOver: MouseEventHandler;
   open: boolean;
+  submenuItems: null | Array<{
+    columnSize: number;
+    items: Array<{
+      description: string;
+      hasImage: boolean;
+      icon: string;
+      imgUrl?: string;
+      title: string;
+    }>;
+    title: string;
+  }>;
 }
 
-const Submenu = ({ onMouseOut, onMouseOver, open }: SubmenuProps) => {
+const Submenu = ({ onMouseOut, onMouseOver, open, submenuItems }: SubmenuProps) => {
+  console.log('received submenu', submenuItems);
+
+  if (!submenuItems) {
+    return null;
+  }
+
   return (
     <Box className={`${styles.submenuDiv} ${open && `${styles.submenuOpen}`}`}>
       <StyledContainer
@@ -29,10 +47,26 @@ const Submenu = ({ onMouseOut, onMouseOver, open }: SubmenuProps) => {
         onMouseOut={onMouseOut}
         onMouseOver={onMouseOver}
       >
-        <NavButton>Submenu Item 1</NavButton>
-        <NavButton>Submenu Item 2</NavButton>
-        <NavButton>Submenu Item 3</NavButton>
-        <NavButton>Submenu Item 4</NavButton>
+        <Grid container sx={{ px: 2 }}>
+          {submenuItems.map((submenuItem, index) => (
+            <Grid key={index} size={submenuItem.columnSize}>
+              <Typography mb={2} sx={{ color: 'black' }} variant="h6">
+                {submenuItem.title}
+              </Typography>
+              <Box
+                sx={{
+                  display: 'grid',
+                  gap: '40px 28px',
+                  gridTemplateColumns: `repeat(${submenuItem.columnSize / 4}, 1fr)`,
+                }}
+              >
+                {submenuItem.items.map((item, index) => (
+                  <SubmenuItem key={index} description={item.description} title={item.title} />
+                ))}
+              </Box>
+            </Grid>
+          ))}
+        </Grid>
       </StyledContainer>
     </Box>
   );

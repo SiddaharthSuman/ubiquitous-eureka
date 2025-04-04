@@ -30,7 +30,68 @@
             "imgUrl": "",
             "title": "Self-guided tours >>"
           }
-        ]
+        ],
+        "title": "Products"
+      },
+      {
+        "columnSize": 8,
+        "items": [
+          {
+            "description": "Ensure a digitalized, quality-driven approach",
+            "hasImage": false,
+            "icon": "",
+            "title": "Document Management"
+          },
+          {
+            "description": "Reduce compliance issues and save time",
+            "hasImage": false,
+            "icon": "",
+            "title": "Quality Events Management"
+          },
+          {
+            "description": "Implement change faster",
+            "hasImage": false,
+            "icon": "",
+            "title": "Change Control Management"
+          },
+          {
+            "description": "Take away the dread and reduce the risks",
+            "hasImage": false,
+            "icon": "",
+            "title": "Risk Management"
+          },
+          {
+            "description": "Enhance performance with quality metrics",
+            "hasImage": false,
+            "icon": "",
+            "title": "Quality KPIs"
+          },
+          {
+            "description": "Boost continuous learning",
+            "hasImage": false,
+            "icon": "",
+            "title": "Training Management"
+          },
+          {
+            "description": "Streamline workflows to instill a quality culture",
+            "hasImage": false,
+            "icon": "",
+            "title": "CAPA Management"
+          },
+          {
+            "description": "Remove stress and simplify compliance",
+            "hasImage": false,
+            "icon": "",
+            "title": "Audits Management"
+          },
+          {
+            "description": "Ensure consistent maintenance",
+            "hasImage": false,
+            "icon": "",
+            "title": "Equipment Management"
+          }
+        ],
+        "title": "Featured Capabilities"
       }
     ],
     "title": "Products"
@@ -38,16 +99,194 @@
   {
     "link": "/about",
     "submenu": [
-      { "link": "/about/team", "title": "Our Team" },
-      { "link": "/about/story", "title": "Our Story" }
+      {
+        "columnSize": 4,
+        "items": [
+          {
+            "description": "Transform quality into your brightest asset",
+            "hasImage": false,
+            "icon": "",
+            "title": "Smart QMS"
+          },
+          {
+            "description": "Accelerate from idea to market for medical devices",
+            "hasImage": false,
+            "icon": "",
+            "title": "Smart QMS for Medical Devices"
+          },
+          {
+            "description": "21 CFR 11 compliant controlled printing",
+            "hasImage": false,
+            "icon": "",
+            "title": "Controlled Printing & Reconciliation"
+          },
+          {
+            "description": "Take an interactive, self-guided tour to see how Biogentic helps you manage quality",
+            "hasImage": true,
+            "icon": "",
+            "imgUrl": "",
+            "title": "Self-guided tours >>"
+          }
+        ],
+        "title": "Products"
+      },
+      {
+        "columnSize": 8,
+        "items": [
+          {
+            "description": "Ensure a digitalized, quality-driven approach",
+            "hasImage": false,
+            "icon": "",
+            "title": "Document Management"
+          },
+          {
+            "description": "Reduce compliance issues and save time",
+            "hasImage": false,
+            "icon": "",
+            "title": "Quality Events Management"
+          },
+          {
+            "description": "Implement change faster",
+            "hasImage": false,
+            "icon": "",
+            "title": "Change Control Management"
+          },
+          {
+            "description": "Take away the dread and reduce the risks",
+            "hasImage": false,
+            "icon": "",
+            "title": "Risk Management"
+          },
+          {
+            "description": "Enhance performance with quality metrics",
+            "hasImage": false,
+            "icon": "",
+            "title": "Quality KPIs"
+          },
+          {
+            "description": "Boost continuous learning",
+            "hasImage": false,
+            "icon": "",
+            "title": "Training Management"
+          },
+          {
+            "description": "Streamline workflows to instill a quality culture",
+            "hasImage": false,
+            "icon": "",
+            "title": "CAPA Management"
+          },
+          {
+            "description": "Remove stress and simplify compliance",
+            "hasImage": false,
+            "icon": "",
+            "title": "Audits Management"
+          },
+          {
+            "description": "Ensure consistent maintenance",
+            "hasImage": false,
+            "icon": "",
+            "title": "Equipment Management"
+          }
+        ],
+        "title": "Featured Capabilities"
+      }
     ],
     "title": "Solutions"
   },
   {
     "link": "/services",
     "submenu": [
-      { "link": "/services/consulting", "title": "Consulting" },
-      { "link": "/services/development", "title": "Development" }
+      {
+        "columnSize": 4,
+        "items": [
+          {
+            "description": "Transform quality into your brightest asset",
+            "hasImage": false,
+            "icon": "",
+            "title": "Smart QMS"
+          },
+          {
+            "description": "Accelerate from idea to market for medical devices",
+            "hasImage": false,
+            "icon": "",
+            "title": "Smart QMS for Medical Devices"
+          },
+          {
+            "description": "21 CFR 11 compliant controlled printing",
+            "hasImage": false,
+            "icon": "",
+            "title": "Controlled Printing & Reconciliation"
+          },
+          {
+            "description": "Take an interactive, self-guided tour to see how Biogentic helps you manage quality",
+            "hasImage": true,
+            "icon": "",
+            "imgUrl": "",
+            "title": "Self-guided tours >>"
+          }
+        ],
+        "title": "Products"
+      },
+      {
+        "columnSize": 8,
+        "items": [
+          {
+            "description": "Ensure a digitalized, quality-driven approach",
+            "hasImage": false,
+            "icon": "",
+            "title": "Document Management"
+          },
+          {
+            "description": "Reduce compliance issues and save time",
+            "hasImage": false,
+            "icon": "",
+            "title": "Quality Events Management"
+          },
+          {
+            "description": "Implement change faster",
+            "hasImage": false,
+            "icon": "",
+            "title": "Change Control Management"
+          },
+          {
+            "description": "Take away the dread and reduce the risks",
+            "hasImage": false,
+            "icon": "",
+            "title": "Risk Management"
+          },
+          {
+            "description": "Enhance performance with quality metrics",
+            "hasImage": false,
+            "icon": "",
+            "title": "Quality KPIs"
+          },
+          {
+            "description": "Boost continuous learning",
+            "hasImage": false,
+            "icon": "",
+            "title": "Training Management"
+          },
+          {
+            "description": "Streamline workflows to instill a quality culture",
+            "hasImage": false,
+            "icon": "",
+            "title": "CAPA Management"
+          },
+          {
+            "description": "Remove stress and simplify compliance",
+            "hasImage": false,
+            "icon": "",
+            "title": "Audits Management"
+          },
+          {
+            "description": "Ensure consistent maintenance",
+            "hasImage": false,
+            "icon": "",
+            "title": "Equipment Management"
+          }
+        ],
+        "title": "Featured Capabilities"
+      }
     ],
     "title": "Resources"
   },

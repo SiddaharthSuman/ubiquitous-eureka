@@ -10,7 +10,7 @@ import {
   Typography,
   TypographyProps,
 } from '@mui/material';
-import { useRef, useState } from 'react';
+import { MouseEvent, useRef, useState } from 'react';
 
 import NavButton from './NavButton/NavButton';
 import StyledAppBar from './StyledAppBar/StyledAppBar';
@@ -20,26 +20,20 @@ import Submenu from './Submenu/Submenu';
 interface NavigationProps {
   menuItems: Array<{
     link: string;
-    submenu?: Array<
-      | { link: string; title: string }
-      | {
-          columnSize: number;
-          items: Array<{
-            description: string;
-            hasImage: boolean;
-            icon: string;
-            imgUrl?: string;
-            title: string;
-          }>;
-        }
-    >;
+    submenu?: Array<{
+      columnSize: number;
+      items: Array<{
+        description: string;
+        hasImage: boolean;
+        icon: string;
+        imgUrl?: string;
+        title: string;
+      }>;
+      title: string;
+    }>;
     title: string;
   }>;
 }
-
-// interface NavigationProps {
-//   menuItems: unknown;
-// }
 
 const StyledLogo = styled(Typography)<TypographyProps>(({}) => ({
   fontFamily: 'var(--font-playfair)',
@@ -62,21 +56,37 @@ const DemoButton = styled(Button)<ButtonProps>(({}) => ({
 
 const Navigation = ({ menuItems }: NavigationProps) => {
   const [open, setOpen] = useState(false);
+  const [selectedSubmenu, setSelectedSubmenu] = useState<Exclude<
+    NavigationProps['menuItems'][number]['submenu'],
+    undefined
+  > | null>(null);
   const closeTimer = useRef<NodeJS.Timeout | null>(null);
+  const menuParent = useRef<HTMLElement>(null);
 
   const handleMouseOut = () => {
     // console.log('mouse is out');
     closeTimer.current = setTimeout(() => {
       setOpen(false);
+      setSelectedSubmenu(null);
       closeTimer.current = null;
     }, 100);
   };
-  const handleMouseHover = () => {
-    // console.log('mouse is in');
+  const handleMouseHover = (event: MouseEvent<HTMLElement>) => {
+    console.log('mouse is in', menuParent.current!.contains(event.target as Node));
     if (closeTimer.current) {
       clearTimeout(closeTimer.current);
       closeTimer.current = null;
     }
+
+    if (menuParent.current?.contains(event.target as Node)) {
+      const buttonText = (event.target as HTMLElement).textContent;
+      const menuItem = menuItems.find((item) => item.title == buttonText);
+      console.log('corresponding submenu', menuItem?.submenu);
+      if (menuItem?.submenu) {
+        setSelectedSubmenu(menuItem?.submenu);
+      }
+    }
+
     setOpen(true);
   };
 
@@ -84,6 +94,7 @@ const Navigation = ({ menuItems }: NavigationProps) => {
     <>
       <Submenu
         open={open}
+        submenuItems={selectedSubmenu}
         onMouseOut={handleMouseOut}
         onMouseOver={handleMouseHover}
       />
@@ -93,7 +104,7 @@ const Navigation = ({ menuItems }: NavigationProps) => {
             <StyledLogo component="div" variant="h6">
               Biogentic
             </StyledLogo>
-            <Box className={styles.menuGroup}>
+            <Box ref={menuParent} className={styles.menuGroup}>
               {menuItems.map((item) => (
                 <NavButton
                   key={item.title}
