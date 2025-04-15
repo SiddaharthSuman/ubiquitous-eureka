@@ -1,0 +1,192 @@
+{
+  "pricingTiers": [
+    {
+      "borderColor": "#374151",
+      "color": "#1f2937",
+      "ctaButton": {
+        "color": "primary",
+        "text": "Start for free!",
+        "variant": "outlined"
+      },
+      "description": "Unlimited free access to start your Smart Quality journey",
+      "features": [
+        {
+          "hasInfoIcon": true,
+          "name": "Up to 20 Documents"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Up to 5 Training"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "KPIs"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Unlimited Users"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Unlimited electronic signatures (21CFR11 compliant)"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Unlimited Scilife Academy access"
+        }
+      ],
+      "highlight": false,
+      "name": "Free",
+      "notes": ["* No credit card required"],
+      "textColor": "#f3f4f6"
+    },
+    {
+      "borderColor": "#4338ca",
+      "color": "#312e81",
+      "ctaButton": {
+        "color": "primary",
+        "text": "Request pricing",
+        "variant": "contained"
+      },
+      "description": "Let no compliance slip through the cracks",
+      "features": [
+        {
+          "hasInfoIcon": true,
+          "name": "Documents"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Records"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Training"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Competences"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "KPIs"
+        }
+      ],
+      "highlight": false,
+      "name": "Essential",
+      "notes": [],
+      "textColor": "#f3f4f6"
+    },
+    {
+      "borderColor": "#6366f1",
+      "color": "#4f46e5",
+      "ctaButton": {
+        "color": "secondary",
+        "text": "Request pricing",
+        "variant": "contained"
+      },
+      "description": "Everything you need to efficiently manage your quality system",
+      "features": [
+        {
+          "hasInfoIcon": true,
+          "name": "Documents"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Records"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Training"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Competences"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "KPIs"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Deviations, non-conformities, complaints, other quality events"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "CAPAs"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Change Control"
+        }
+      ],
+      "highlight": true,
+      "name": "Core",
+      "notes": [],
+      "textColor": "#ffffff"
+    },
+    {
+      "borderColor": "#4b5563",
+      "color": "#374151",
+      "ctaButton": {
+        "color": "primary",
+        "text": "Request pricing",
+        "variant": "contained"
+      },
+      "description": "The comprehensive solution to manage quality smartly",
+      "features": [
+        {
+          "hasInfoIcon": true,
+          "name": "Documents"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Records"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Training"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Competences"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "KPIs"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Deviations, non-conformities, complaints, other quality events"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "CAPAs"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Change Control"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Audits"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Supplier Management"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Risk Assessment"
+        },
+        {
+          "hasInfoIcon": true,
+          "name": "Equipment"
+        }
+      ],
+      "highlight": false,
+      "name": "Core +",
+      "notes": [],
+      "textColor": "#f3f4f6"
+    }
+  ]
+}
