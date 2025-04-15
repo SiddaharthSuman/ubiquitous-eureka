@@ -1,0 +1,29 @@
+.iconContainer {
+  position: relative;
+  display: inline-block;
+  inline-size: 24px;
+  block-size: 24px;
+  color: black;
+}
+
+.iconOutline {
+  position: absolute;
+  display: inline-flex;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+.iconFilled {
+  position: absolute;
+  display: inline-flex;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+  &.active {
+    opacity: 1;
+  }
+}

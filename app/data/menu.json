@@ -1,0 +1,369 @@
+[
+  {
+    "link": "/",
+    "submenu": [
+      {
+        "columnSize": 4,
+        "items": [
+          {
+            "description": "Transform quality into your brightest asset",
+            "hasImage": false,
+            "icon": "Settings",
+            "title": "Smart QMS"
+          },
+          {
+            "description": "Accelerate from idea to market for medical devices",
+            "hasImage": false,
+            "icon": "MedicalServices",
+            "title": "Smart QMS for Medical Devices"
+          },
+          {
+            "description": "21 CFR 11 compliant controlled printing",
+            "hasImage": false,
+            "icon": "Print",
+            "title": "Controlled Printing & Reconciliation"
+          },
+          {
+            "description": "Take an interactive, self-guided tour to see how Scilife helps you manage quality",
+            "hasImage": true,
+            "icon": "Explore",
+            "imgUrl": "",
+            "title": "Self-guided tours >>"
+          }
+        ],
+        "title": "PRODUCTS"
+      },
+      {
+        "columnSize": 8,
+        "items": [
+          {
+            "description": "Ensure a digitalized, quality-driven approach",
+            "hasImage": false,
+            "icon": "Description",
+            "title": "Document Management"
+          },
+          {
+            "description": "Reduce compliance issues and save time",
+            "hasImage": false,
+            "icon": "EventNote",
+            "title": "Quality Events Management"
+          },
+          {
+            "description": "Implement change faster",
+            "hasImage": false,
+            "icon": "CompareArrows",
+            "title": "Change Control Management"
+          },
+          {
+            "description": "Take away the dread and reduce the risks",
+            "hasImage": false,
+            "icon": "Warning",
+            "title": "Risk Management"
+          },
+          {
+            "description": "Enhance performance with quality metrics",
+            "hasImage": false,
+            "icon": "Insights",
+            "title": "Quality KPIs"
+          },
+          {
+            "description": "Boost continuous learning",
+            "hasImage": false,
+            "icon": "School",
+            "title": "Training Management"
+          },
+          {
+            "description": "Streamline workflows to instill a quality culture",
+            "hasImage": false,
+            "icon": "Loop",
+            "title": "CAPA Management"
+          },
+          {
+            "description": "Remove stress and simplify compliance",
+            "hasImage": false,
+            "icon": "AssignmentTurnedIn",
+            "title": "Audits Management"
+          },
+          {
+            "description": "Ensure consistent maintenance",
+            "hasImage": false,
+            "icon": "Handyman",
+            "title": "Equipment Management"
+          }
+        ],
+        "title": "FEATURED CAPABILITIES"
+      }
+    ],
+    "title": "Products"
+  },
+  {
+    "link": "/about",
+    "submenu": [
+      {
+        "columnSize": 4,
+        "items": [
+          {
+            "description": "Integrate and automate all your quality process",
+            "hasImage": false,
+            "icon": "Science",
+            "title": "Pharma & Biotech"
+          },
+          {
+            "description": "Bring safe and compliant devices to market faster",
+            "hasImage": false,
+            "icon": "MedicalServices",
+            "title": "Medical Devices"
+          },
+          {
+            "description": "Boost efficiency to breeze through trial deadlines",
+            "hasImage": false,
+            "icon": "Spa",
+            "title": "Medicinal Cannabis"
+          },
+          {
+            "description": "Boost efficiency to breeze through trial deadlines",
+            "hasImage": false,
+            "icon": "Biotech",
+            "title": "CRO/CMO"
+          },
+          {
+            "description": "Track all your manufacturing process",
+            "hasImage": false,
+            "icon": "Factory",
+            "title": "ATMP"
+          }
+        ],
+        "title": "INDUSTRIES"
+      },
+      {
+        "columnSize": 8,
+        "items": [
+          {
+            "description": "Ensure quality and safety in all your products",
+            "hasImage": false,
+            "icon": "VerifiedUser",
+            "title": "Building a GMP-compliance QMS"
+          },
+          {
+            "description": "Stay audit-ready stress-free anytime",
+            "hasImage": false,
+            "icon": "Gavel",
+            "title": "Becoming audit ready"
+          },
+          {
+            "description": "Ensure full traceability in your Medical Device",
+            "hasImage": false,
+            "icon": "AutoGraph",
+            "title": "Streamline Design Control process"
+          },
+          {
+            "description": "Safeguard your supply chain with GDP compliance",
+            "hasImage": false,
+            "icon": "Shield",
+            "title": "Complying with GDP standards"
+          },
+          {
+            "description": "",
+            "hasImage": false,
+            "icon": "Security",
+            "title": "Security"
+          },
+          {
+            "description": "",
+            "hasImage": false,
+            "icon": "GppGood",
+            "title": "Compliance"
+          },
+          {
+            "description": "",
+            "hasImage": false,
+            "icon": "Api",
+            "title": "Integrations"
+          }
+        ],
+        "title": "USE CASES"
+      }
+    ],
+    "title": "Solutions"
+  },
+  {
+    "link": "/services",
+    "submenu": [
+      {
+        "columnSize": 4,
+        "items": [
+          {
+            "description": "Uncover our latest expert content",
+            "hasImage": false,
+            "icon": "Article",
+            "title": "Blog"
+          },
+          {
+            "description": "Increase your quality terminology",
+            "hasImage": false,
+            "icon": "MenuBook",
+            "title": "Glossary"
+          },
+          {
+            "description": "Find all the guides and tools you need to succeed",
+            "hasImage": false,
+            "icon": "Build",
+            "title": "Guides and Tools"
+          },
+          {
+            "description": "Master the essential soft skills for a quality-driven life sciences team",
+            "hasImage": false,
+            "icon": "Psychology",
+            "title": "Quality Management Soft Skills"
+          }
+        ],
+        "title": ""
+      },
+      {
+        "columnSize": 8,
+        "items": [
+          {
+            "description": "Attend fascinating talks and workshops",
+            "hasImage": false,
+            "icon": "Event",
+            "title": "Events and Webinars"
+          },
+          {
+            "description": "Discover the fifth wave of quality",
+            "hasImage": false,
+            "icon": "Mic",
+            "title": "Smart Quality Summit"
+          },
+          {
+            "description": "Stay at the forefront of the latest trends",
+            "hasImage": false,
+            "icon": "TrendingUp",
+            "title": "2025 Global Quality Outlook"
+          },
+          {
+            "description": "Your hub for continuous learning",
+            "hasImage": false,
+            "icon": "School",
+            "title": "Scilife Academy"
+          },
+          {
+            "description": "Curious about your quality maturity? Explore our library here >>",
+            "hasImage": true,
+            "icon": "BarChart",
+            "imgUrl": "",
+            "title": "Quality Maturity Scan"
+          },
+          {
+            "description": "From QMS basics and regulations to implementation, learn everything about managing a quality management system >>",
+            "hasImage": true,
+            "icon": "Book",
+            "imgUrl": "",
+            "title": "The Full Guide to QMS in Pharma"
+          }
+        ],
+        "title": ""
+      }
+    ],
+    "title": "Resources"
+  },
+  {
+    "link": "/customers",
+    "submenu": [
+      {
+        "columnSize": 5,
+        "items": [
+          {
+            "description": "Read how companies switching to Scilife",
+            "hasImage": false,
+            "icon": "Comment",
+            "title": "Customer Stories"
+          }
+        ],
+        "title": "CUSTOMER SPOTLIGHTS"
+      },
+      {
+        "columnSize": 7,
+        "items": [
+          {
+            "description": "Build your skillset",
+            "hasImage": false,
+            "icon": "MenuBook",
+            "title": "Knowledge Base"
+          },
+          {
+            "description": "Looking for Life Science and Quality resources? Explore our latest blog articles >>",
+            "hasImage": true,
+            "icon": "Lightbulb",
+            "imgUrl": "",
+            "title": "Get inspired by our Blog"
+          }
+        ],
+        "title": "CUSTOMER RESOURCES"
+      }
+    ],
+    "title": "Customers"
+  },
+  {
+    "link": "/company",
+    "submenu": [
+      {
+        "columnSize": 5,
+        "items": [
+          {
+            "description": "Get know us better",
+            "hasImage": false,
+            "icon": "Business",
+            "title": "About Us"
+          },
+          {
+            "description": "Join our epic team!",
+            "hasImage": false,
+            "icon": "Work",
+            "title": "Careers"
+          },
+          {
+            "description": "Read all about it!",
+            "hasImage": false,
+            "icon": "Newspaper",
+            "title": "Press Releases"
+          }
+        ],
+        "title": "COMPANY"
+      },
+      {
+        "columnSize": 7,
+        "items": [
+          {
+            "description": "Become a Scilife partner today",
+            "hasImage": false,
+            "icon": "Handshake",
+            "title": "Partners"
+          },
+          {
+            "description": "Remote life, Scilife style!",
+            "hasImage": false,
+            "icon": "Wallpaper",
+            "title": "Custom Backgrounds"
+          },
+          {
+            "description": "Our doors are open—Join our epic team and climb on board the Scilife rocket!",
+            "hasImage": true,
+            "icon": "Groups",
+            "imgUrl": "",
+            "title": "Meet our teams"
+          }
+        ],
+        "title": "PARTNERS"
+      }
+    ],
+    "title": "Company"
+  },
+  {
+    "link": "/pricing",
+    "title": "Pricing"
+  },
+  {
+    "link": "/contact",
+    "title": "Contact us"
+  }
+]

@@ -11,7 +11,10 @@
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "json",
+    "jsonc",
+    "json5"
   ],
 
   // Respect your project's Prettier config
@@ -44,7 +47,8 @@
     "extends": [
       "stylelint-config-standard-scss",
       "stylelint-config-recess-order",
-      "stylelint-prettier/recommended"
+      "stylelint-prettier/recommended",
+      "stylelint-config-css-modules"
     ],
     "files": ["**/*.scss"],
     "plugins": [
@@ -63,7 +67,8 @@
         {
           "ignoreAtRules": ["tailwind", "apply", "layer"]
         }
-      ]
+      ],
+      "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$"
     }
   },
   // Disable conflicting default formatters
