@@ -17,6 +17,7 @@ interface PricingTierCardProps {
     features: {
       hasInfoIcon: boolean;
       name: string;
+      tooltip: string;
     }[];
     highlight: boolean;
     name: string;
@@ -71,7 +72,7 @@ const PricingTierCard = ({ data }: PricingTierCardProps) => {
                 <Typography sx={{ fontSize: '18px', fontWeight: '500', textWrap: 'pretty' }}>
                   {feature.name}
                 </Typography>
-                {feature.hasInfoIcon && <InfoIcon />}
+                {feature.hasInfoIcon && <InfoIcon tooltipText={feature.tooltip} />}
               </Grid>
             ))}
           </Grid>

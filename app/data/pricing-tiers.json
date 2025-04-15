@@ -12,27 +12,33 @@
       "features": [
         {
           "hasInfoIcon": true,
-          "name": "Up to 20 Documents"
+          "name": "Up to 20 Documents",
+          "tooltip": "Organize and standardize up to 20 documents."
         },
         {
           "hasInfoIcon": true,
-          "name": "Up to 5 Training"
+          "name": "Up to 5 Training",
+          "tooltip": "Create and track up to 5 trainings."
         },
         {
           "hasInfoIcon": true,
-          "name": "KPIs"
+          "name": "KPIs",
+          "tooltip": "Gain insights into your company's performance."
         },
         {
           "hasInfoIcon": true,
-          "name": "Unlimited Users"
+          "name": "Unlimited Users",
+          "tooltip": "Invite as many team members as needed to collaborate on quality management tasks."
         },
         {
           "hasInfoIcon": true,
-          "name": "Unlimited electronic signatures (21CFR11 compliant)"
+          "name": "Unlimited electronic signatures (21CFR11 compliant)",
+          "tooltip": "Ensure compliance with 21 CFR part 11 regulations with unlimited electronic signatures."
         },
         {
           "hasInfoIcon": true,
-          "name": "Unlimited Scilife Academy access"
+          "name": "Unlimited Scilife Academy access",
+          "tooltip": "Access bite-sized learning modules on a wide range of quality concepts."
         }
       ],
       "highlight": false,
@@ -52,23 +58,28 @@
       "features": [
         {
           "hasInfoIcon": true,
-          "name": "Documents"
+          "name": "Documents",
+          "tooltip": "Organize and standardize your document library."
         },
         {
           "hasInfoIcon": true,
-          "name": "Records"
+          "name": "Records",
+          "tooltip": "Create and customize your digital forms."
         },
         {
           "hasInfoIcon": true,
-          "name": "Training"
+          "name": "Training",
+          "tooltip": "Create and track individual and group trainings."
         },
         {
           "hasInfoIcon": true,
-          "name": "Competences"
+          "name": "Competences",
+          "tooltip": "Track and update employee skills and competences."
         },
         {
           "hasInfoIcon": true,
-          "name": "KPIs"
+          "name": "KPIs",
+          "tooltip": "Gain insights into your company’s performance."
         }
       ],
       "highlight": false,
@@ -88,35 +99,43 @@
       "features": [
         {
           "hasInfoIcon": true,
-          "name": "Documents"
+          "name": "Documents",
+          "tooltip": "Organize and standardize your document library."
         },
         {
           "hasInfoIcon": true,
-          "name": "Records"
+          "name": "Records",
+          "tooltip": "Create and customize your digital forms."
         },
         {
           "hasInfoIcon": true,
-          "name": "Training"
+          "name": "Training",
+          "tooltip": "Create and track individual and group trainings."
         },
         {
           "hasInfoIcon": true,
-          "name": "Competences"
+          "name": "Competences",
+          "tooltip": "Track and update employee skills and competences."
         },
         {
           "hasInfoIcon": true,
-          "name": "KPIs"
+          "name": "KPIs",
+          "tooltip": "Gain insights into your company's performance."
         },
         {
           "hasInfoIcon": true,
-          "name": "Deviations, non-conformities, complaints, other quality events"
+          "name": "Deviations, non-conformities, complaints, other quality events",
+          "tooltip": "Track and resolve quality events."
         },
         {
           "hasInfoIcon": true,
-          "name": "CAPAs"
+          "name": "CAPAs",
+          "tooltip": "Manage corrective and preventive actions to improve quality processes."
         },
         {
           "hasInfoIcon": true,
-          "name": "Change Control"
+          "name": "Change Control",
+          "tooltip": "Simplify the request, approval, and implementation of modifications."
         }
       ],
       "highlight": true,
@@ -136,51 +155,63 @@
       "features": [
         {
           "hasInfoIcon": true,
-          "name": "Documents"
+          "name": "Documents",
+          "tooltip": "Organize and standardize your document library."
         },
         {
           "hasInfoIcon": true,
-          "name": "Records"
+          "name": "Records",
+          "tooltip": "Create and customize your digital forms."
         },
         {
           "hasInfoIcon": true,
-          "name": "Training"
+          "name": "Training",
+          "tooltip": "Create and track individual and group trainings."
         },
         {
           "hasInfoIcon": true,
-          "name": "Competences"
+          "name": "Competences",
+          "tooltip": "Track and update employee skills and competences."
         },
         {
           "hasInfoIcon": true,
-          "name": "KPIs"
+          "name": "KPIs",
+          "tooltip": "Gain insights into your company's performance."
         },
         {
           "hasInfoIcon": true,
-          "name": "Deviations, non-conformities, complaints, other quality events"
+          "name": "Deviations, non-conformities, complaints, other quality events",
+          "tooltip": "Track and resolve quality events."
         },
         {
           "hasInfoIcon": true,
-          "name": "CAPAs"
+          "name": "CAPAs",
+          "tooltip": "Manage corrective and preventive actions to improve quality processes."
         },
         {
           "hasInfoIcon": true,
-          "name": "Change Control"
+          "name": "Change Control",
+          "tooltip": "Simplify the request, approval, and implementation of modifications."
         },
         {
           "hasInfoIcon": true,
-          "name": "Audits"
+          "name": "Audits",
+          "tooltip": "Manage various audit types, including supplier, internal, outgoing, and incoming audits."
         },
         {
           "hasInfoIcon": true,
-          "name": "Supplier Management"
+          "name": "Supplier Management",
+          "tooltip": "Evaluate, qualify, and manage your suppliers."
         },
         {
           "hasInfoIcon": true,
-          "name": "Risk Assessment"
+          "name": "Risk Assessment",
+          "tooltip": "Facilitate comprehensive risk assessment processes from start to finish."
         },
         {
           "hasInfoIcon": true,
-          "name": "Equipment"
+          "name": "Equipment",
+          "tooltip": "Streamline equipment maintenance and calibration tasks."
         }
       ],
       "highlight": false,
