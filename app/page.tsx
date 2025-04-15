@@ -22,7 +22,7 @@ export default function Home() {
           Plans and Pricing
         </Typography>
       </Grid>
-      <Grid container className={styles.pricingContainer} size={12} sx={{ alignItems: 'stretch' }}>
+      <Grid container className={styles.pricingContainer} size={12}>
         {pricingData.pricingTiers.map((tier, index) => (
           <Grid key={index} size={12 / pricingData.pricingTiers.length} sx={{ display: 'flex' }}>
             <PricingTierCard data={tier}></PricingTierCard>
