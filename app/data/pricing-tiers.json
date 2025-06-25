@@ -5,45 +5,40 @@
       "color": "#1f2937",
       "ctaButton": {
         "color": "primary",
-        "text": "Start for free!",
+        "text": "Get Started",
         "variant": "outlined"
       },
-      "description": "Unlimited free access to start your Smart Quality journey",
+      "description": "Perfect for businesses exploring AI opportunities",
       "features": [
         {
           "hasInfoIcon": true,
-          "name": "Up to 20 Documents",
-          "tooltip": "Organize and standardize up to 20 documents."
+          "name": "AI Strategy Assessment",
+          "tooltip": "Comprehensive analysis of your business processes and AI opportunities."
         },
         {
           "hasInfoIcon": true,
-          "name": "Up to 5 Training",
-          "tooltip": "Create and track up to 5 trainings."
+          "name": "Use Case Identification",
+          "tooltip": "Identify high-impact AI applications for your specific industry."
         },
         {
           "hasInfoIcon": true,
-          "name": "KPIs",
-          "tooltip": "Gain insights into your company's performance."
+          "name": "ROI Analysis",
+          "tooltip": "Detailed cost-benefit analysis for AI implementation projects."
         },
         {
           "hasInfoIcon": true,
-          "name": "Unlimited Users",
-          "tooltip": "Invite as many team members as needed to collaborate on quality management tasks."
+          "name": "Technology Roadmap",
+          "tooltip": "Strategic roadmap for AI adoption over 12-24 months."
         },
         {
           "hasInfoIcon": true,
-          "name": "Unlimited electronic signatures (21CFR11 compliant)",
-          "tooltip": "Ensure compliance with 21 CFR part 11 regulations with unlimited electronic signatures."
-        },
-        {
-          "hasInfoIcon": true,
-          "name": "Unlimited Scilife Academy access",
-          "tooltip": "Access bite-sized learning modules on a wide range of quality concepts."
+          "name": "Team Training Plan",
+          "tooltip": "Customized training program for your team on AI fundamentals."
         }
       ],
       "highlight": false,
-      "name": "Free",
-      "notes": ["* No credit card required"],
+      "name": "Discovery",
+      "notes": ["* 2-week engagement"],
       "textColor": "#f3f4f6"
     },
     {
@@ -51,39 +46,39 @@
       "color": "#312e81",
       "ctaButton": {
         "color": "primary",
-        "text": "Request pricing",
+        "text": "Request Quote",
         "variant": "contained"
       },
-      "description": "Let no compliance slip through the cracks",
+      "description": "Transform your business with AI-powered solutions",
       "features": [
         {
           "hasInfoIcon": true,
-          "name": "Documents",
-          "tooltip": "Organize and standardize your document library."
+          "name": "Custom AI Solution Development",
+          "tooltip": "Tailored AI applications built specifically for your business needs."
         },
         {
           "hasInfoIcon": true,
-          "name": "Records",
-          "tooltip": "Create and customize your digital forms."
+          "name": "Data Strategy & Infrastructure",
+          "tooltip": "Comprehensive data architecture and pipeline setup."
         },
         {
           "hasInfoIcon": true,
-          "name": "Training",
-          "tooltip": "Create and track individual and group trainings."
+          "name": "Machine Learning Model Development",
+          "tooltip": "Custom ML models trained on your business data."
         },
         {
           "hasInfoIcon": true,
-          "name": "Competences",
-          "tooltip": "Track and update employee skills and competences."
+          "name": "Integration & Deployment",
+          "tooltip": "Seamless integration with existing systems and production deployment."
         },
         {
           "hasInfoIcon": true,
-          "name": "KPIs",
-          "tooltip": "Gain insights into your company’s performance."
+          "name": "Ongoing Support & Maintenance",
+          "tooltip": "Continuous monitoring, updates, and technical support."
         }
       ],
       "highlight": false,
-      "name": "Essential",
+      "name": "Implementation",
       "notes": [],
       "textColor": "#f3f4f6"
     },
@@ -92,54 +87,54 @@
       "color": "#4f46e5",
       "ctaButton": {
         "color": "secondary",
-        "text": "Request pricing",
+        "text": "Contact Sales",
         "variant": "contained"
       },
-      "description": "Everything you need to efficiently manage your quality system",
+      "description": "End-to-end AI transformation for enterprise organizations",
       "features": [
         {
           "hasInfoIcon": true,
-          "name": "Documents",
-          "tooltip": "Organize and standardize your document library."
+          "name": "Enterprise AI Strategy",
+          "tooltip": "Comprehensive AI transformation strategy across all business units."
         },
         {
           "hasInfoIcon": true,
-          "name": "Records",
-          "tooltip": "Create and customize your digital forms."
+          "name": "Multi-Platform AI Solutions",
+          "tooltip": "Integrated AI solutions across multiple platforms and systems."
         },
         {
           "hasInfoIcon": true,
-          "name": "Training",
-          "tooltip": "Create and track individual and group trainings."
+          "name": "Advanced Analytics & Insights",
+          "tooltip": "Sophisticated analytics and business intelligence solutions."
         },
         {
           "hasInfoIcon": true,
-          "name": "Competences",
-          "tooltip": "Track and update employee skills and competences."
+          "name": "AI Governance & Compliance",
+          "tooltip": "Establish AI governance frameworks and ensure regulatory compliance."
         },
         {
           "hasInfoIcon": true,
-          "name": "KPIs",
-          "tooltip": "Gain insights into your company's performance."
+          "name": "Change Management",
+          "tooltip": "Comprehensive change management and organizational transformation."
         },
         {
           "hasInfoIcon": true,
-          "name": "Deviations, non-conformities, complaints, other quality events",
-          "tooltip": "Track and resolve quality events."
+          "name": "Dedicated AI Team",
+          "tooltip": "Dedicated team of AI experts working exclusively on your projects."
         },
         {
           "hasInfoIcon": true,
-          "name": "CAPAs",
-          "tooltip": "Manage corrective and preventive actions to improve quality processes."
+          "name": "24/7 Support & Monitoring",
+          "tooltip": "Round-the-clock support and real-time system monitoring."
         },
         {
           "hasInfoIcon": true,
-          "name": "Change Control",
-          "tooltip": "Simplify the request, approval, and implementation of modifications."
+          "name": "Continuous Innovation",
+          "tooltip": "Ongoing research and development of new AI capabilities."
         }
       ],
       "highlight": true,
-      "name": "Core",
+      "name": "Enterprise",
       "notes": [],
       "textColor": "#ffffff"
     },
@@ -148,74 +143,54 @@
       "color": "#374151",
       "ctaButton": {
         "color": "primary",
-        "text": "Request pricing",
+        "text": "Custom Quote",
         "variant": "contained"
       },
-      "description": "The comprehensive solution to manage quality smartly",
+      "description": "Specialized AI solutions for unique business challenges",
       "features": [
         {
           "hasInfoIcon": true,
-          "name": "Documents",
-          "tooltip": "Organize and standardize your document library."
+          "name": "Custom AI Research",
+          "tooltip": "Bespoke AI research and development for unique use cases."
         },
         {
           "hasInfoIcon": true,
-          "name": "Records",
-          "tooltip": "Create and customize your digital forms."
+          "name": "Industry-Specific Solutions",
+          "tooltip": "AI solutions tailored to specific industry requirements and regulations."
         },
         {
           "hasInfoIcon": true,
-          "name": "Training",
-          "tooltip": "Create and track individual and group trainings."
+          "name": "Legacy System Integration",
+          "tooltip": "Seamless integration with complex legacy systems and workflows."
         },
         {
           "hasInfoIcon": true,
-          "name": "Competences",
-          "tooltip": "Track and update employee skills and competences."
+          "name": "Scalable Architecture",
+          "tooltip": "Future-proof architecture designed for massive scale and growth."
         },
         {
           "hasInfoIcon": true,
-          "name": "KPIs",
-          "tooltip": "Gain insights into your company's performance."
+          "name": "Advanced Security",
+          "tooltip": "Enterprise-grade security and privacy protection measures."
         },
         {
           "hasInfoIcon": true,
-          "name": "Deviations, non-conformities, complaints, other quality events",
-          "tooltip": "Track and resolve quality events."
+          "name": "Performance Optimization",
+          "tooltip": "Advanced optimization for maximum performance and efficiency."
         },
         {
           "hasInfoIcon": true,
-          "name": "CAPAs",
-          "tooltip": "Manage corrective and preventive actions to improve quality processes."
+          "name": "Multi-Cloud Deployment",
+          "tooltip": "Flexible deployment across multiple cloud platforms."
         },
         {
           "hasInfoIcon": true,
-          "name": "Change Control",
-          "tooltip": "Simplify the request, approval, and implementation of modifications."
-        },
-        {
-          "hasInfoIcon": true,
-          "name": "Audits",
-          "tooltip": "Manage various audit types, including supplier, internal, outgoing, and incoming audits."
-        },
-        {
-          "hasInfoIcon": true,
-          "name": "Supplier Management",
-          "tooltip": "Evaluate, qualify, and manage your suppliers."
-        },
-        {
-          "hasInfoIcon": true,
-          "name": "Risk Assessment",
-          "tooltip": "Facilitate comprehensive risk assessment processes from start to finish."
-        },
-        {
-          "hasInfoIcon": true,
-          "name": "Equipment",
-          "tooltip": "Streamline equipment maintenance and calibration tasks."
+          "name": "AI Ethics & Responsible AI",
+          "tooltip": "Implementation of ethical AI practices and responsible AI frameworks."
         }
       ],
       "highlight": false,
-      "name": "Core +",
+      "name": "Custom",
       "notes": [],
       "textColor": "#f3f4f6"
     }

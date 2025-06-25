@@ -6,131 +6,131 @@
         "columnSize": 4,
         "items": [
           {
-            "description": "Transform quality into your brightest asset",
+            "description": "Strategic AI consulting to transform your business",
             "hasImage": false,
-            "icon": "Settings",
-            "title": "Smart QMS"
+            "icon": "Psychology",
+            "title": "AI Strategy Consulting"
           },
           {
-            "description": "Accelerate from idea to market for medical devices",
+            "description": "Custom machine learning solutions for your data",
             "hasImage": false,
-            "icon": "MedicalServices",
-            "title": "Smart QMS for Medical Devices"
+            "icon": "AutoGraph",
+            "title": "Machine Learning Development"
           },
           {
-            "description": "21 CFR 11 compliant controlled printing",
+            "description": "Advanced analytics and business intelligence",
             "hasImage": false,
-            "icon": "Print",
-            "title": "Controlled Printing & Reconciliation"
+            "icon": "Insights",
+            "title": "Data Analytics & BI"
           },
           {
-            "description": "Take an interactive, self-guided tour to see how Scilife helps you manage quality",
+            "description": "Take a virtual tour of our AI solutions in action",
             "hasImage": true,
             "icon": "Explore",
             "imgUrl": "",
-            "title": "Self-guided tours >>"
+            "title": "AI Solutions Demo >>"
           }
         ],
-        "title": "PRODUCTS"
+        "title": "SERVICES"
       },
       {
         "columnSize": 8,
         "items": [
           {
-            "description": "Ensure a digitalized, quality-driven approach",
+            "description": "Transform business processes with intelligent automation",
             "hasImage": false,
-            "icon": "Description",
-            "title": "Document Management"
+            "icon": "SmartToy",
+            "title": "Process Automation"
           },
           {
-            "description": "Reduce compliance issues and save time",
+            "description": "Build intelligent chatbots and virtual assistants",
             "hasImage": false,
-            "icon": "EventNote",
-            "title": "Quality Events Management"
+            "icon": "Chat",
+            "title": "Conversational AI"
           },
           {
-            "description": "Implement change faster",
+            "description": "Predict future trends and customer behavior",
             "hasImage": false,
-            "icon": "CompareArrows",
-            "title": "Change Control Management"
+            "icon": "TrendingUp",
+            "title": "Predictive Analytics"
           },
           {
-            "description": "Take away the dread and reduce the risks",
+            "description": "Extract insights from unstructured data",
             "hasImage": false,
-            "icon": "Warning",
-            "title": "Risk Management"
+            "icon": "TextFields",
+            "title": "Natural Language Processing"
           },
           {
-            "description": "Enhance performance with quality metrics",
+            "description": "Computer vision solutions for image and video analysis",
             "hasImage": false,
-            "icon": "Insights",
-            "title": "Quality KPIs"
+            "icon": "Visibility",
+            "title": "Computer Vision"
           },
           {
-            "description": "Boost continuous learning",
+            "description": "Optimize operations with AI-powered insights",
             "hasImage": false,
-            "icon": "School",
-            "title": "Training Management"
+            "icon": "Optimization",
+            "title": "Operations Optimization"
           },
           {
-            "description": "Streamline workflows to instill a quality culture",
+            "description": "Personalize customer experiences with AI",
             "hasImage": false,
-            "icon": "Loop",
-            "title": "CAPA Management"
+            "icon": "Person",
+            "title": "Customer Experience AI"
           },
           {
-            "description": "Remove stress and simplify compliance",
+            "description": "Ensure AI systems are fair, transparent, and ethical",
             "hasImage": false,
-            "icon": "AssignmentTurnedIn",
-            "title": "Audits Management"
+            "icon": "Security",
+            "title": "AI Ethics & Governance"
           },
           {
-            "description": "Ensure consistent maintenance",
+            "description": "Seamless integration with existing systems",
             "hasImage": false,
-            "icon": "Handyman",
-            "title": "Equipment Management"
+            "icon": "IntegrationInstructions",
+            "title": "System Integration"
           }
         ],
-        "title": "FEATURED CAPABILITIES"
+        "title": "AI CAPABILITIES"
       }
     ],
-    "title": "Products"
+    "title": "Services"
   },
   {
-    "link": "/about",
+    "link": "/solutions",
     "submenu": [
       {
         "columnSize": 4,
         "items": [
           {
-            "description": "Integrate and automate all your quality process",
+            "description": "AI solutions for financial services and fintech",
             "hasImage": false,
-            "icon": "Science",
-            "title": "Pharma & Biotech"
+            "icon": "AccountBalance",
+            "title": "Financial Services"
           },
           {
-            "description": "Bring safe and compliant devices to market faster",
+            "description": "Healthcare AI for improved patient outcomes",
             "hasImage": false,
-            "icon": "MedicalServices",
-            "title": "Medical Devices"
+            "icon": "LocalHospital",
+            "title": "Healthcare"
           },
           {
-            "description": "Boost efficiency to breeze through trial deadlines",
+            "description": "Retail AI for enhanced customer experience",
             "hasImage": false,
-            "icon": "Spa",
-            "title": "Medicinal Cannabis"
+            "icon": "ShoppingCart",
+            "title": "Retail & E-commerce"
           },
           {
-            "description": "Boost efficiency to breeze through trial deadlines",
-            "hasImage": false,
-            "icon": "Biotech",
-            "title": "CRO/CMO"
-          },
-          {
-            "description": "Track all your manufacturing process",
+            "description": "Manufacturing AI for operational excellence",
             "hasImage": false,
             "icon": "Factory",
-            "title": "ATMP"
+            "title": "Manufacturing"
+          },
+          {
+            "description": "AI-powered logistics and supply chain optimization",
+            "hasImage": false,
+            "icon": "LocalShipping",
+            "title": "Logistics & Supply Chain"
           }
         ],
         "title": "INDUSTRIES"
@@ -139,46 +139,46 @@
         "columnSize": 8,
         "items": [
           {
-            "description": "Ensure quality and safety in all your products",
+            "description": "Transform customer service with AI-powered solutions",
+            "hasImage": false,
+            "icon": "Support",
+            "title": "Customer Service AI"
+          },
+          {
+            "description": "Optimize marketing campaigns with predictive analytics",
+            "hasImage": false,
+            "icon": "Campaign",
+            "title": "Marketing & Sales AI"
+          },
+          {
+            "description": "Streamline HR processes with intelligent automation",
+            "hasImage": false,
+            "icon": "Work",
+            "title": "HR & Talent AI"
+          },
+          {
+            "description": "Enhance product development with AI insights",
+            "hasImage": false,
+            "icon": "Engineering",
+            "title": "Product Development AI"
+          },
+          {
+            "description": "Ensure AI compliance and security",
             "hasImage": false,
             "icon": "VerifiedUser",
-            "title": "Building a GMP-compliance QMS"
+            "title": "AI Compliance"
           },
           {
-            "description": "Stay audit-ready stress-free anytime",
+            "description": "Scale AI solutions across your organization",
             "hasImage": false,
-            "icon": "Gavel",
-            "title": "Becoming audit ready"
+            "icon": "Scale",
+            "title": "AI Scaling"
           },
           {
-            "description": "Ensure full traceability in your Medical Device",
-            "hasImage": false,
-            "icon": "AutoGraph",
-            "title": "Streamline Design Control process"
-          },
-          {
-            "description": "Safeguard your supply chain with GDP compliance",
-            "hasImage": false,
-            "icon": "Shield",
-            "title": "Complying with GDP standards"
-          },
-          {
-            "description": "",
-            "hasImage": false,
-            "icon": "Security",
-            "title": "Security"
-          },
-          {
-            "description": "",
-            "hasImage": false,
-            "icon": "GppGood",
-            "title": "Compliance"
-          },
-          {
-            "description": "",
+            "description": "Integrate AI with existing business systems",
             "hasImage": false,
             "icon": "Api",
-            "title": "Integrations"
+            "title": "System Integration"
           }
         ],
         "title": "USE CASES"
@@ -187,176 +187,148 @@
     "title": "Solutions"
   },
   {
-    "link": "/services",
+    "link": "/resources",
     "submenu": [
       {
         "columnSize": 4,
         "items": [
           {
-            "description": "Uncover our latest expert content",
+            "description": "Latest insights and trends in AI technology",
             "hasImage": false,
             "icon": "Article",
-            "title": "Blog"
+            "title": "AI Blog"
           },
           {
-            "description": "Increase your quality terminology",
+            "description": "Comprehensive AI terminology and concepts",
             "hasImage": false,
             "icon": "MenuBook",
-            "title": "Glossary"
+            "title": "AI Glossary"
           },
           {
-            "description": "Find all the guides and tools you need to succeed",
+            "description": "Guides and tools for AI implementation",
             "hasImage": false,
             "icon": "Build",
-            "title": "Guides and Tools"
+            "title": "AI Guides & Tools"
           },
           {
-            "description": "Master the essential soft skills for a quality-driven life sciences team",
+            "description": "Best practices for AI project management",
             "hasImage": false,
             "icon": "Psychology",
-            "title": "Quality Management Soft Skills"
+            "title": "AI Project Management"
           }
         ],
-        "title": ""
+        "title": "RESOURCES"
       },
       {
         "columnSize": 8,
         "items": [
           {
-            "description": "Attend fascinating talks and workshops",
+            "description": "Join our AI workshops and webinars",
             "hasImage": false,
             "icon": "Event",
-            "title": "Events and Webinars"
+            "title": "AI Workshops & Webinars"
           },
           {
-            "description": "Discover the fifth wave of quality",
+            "description": "Annual AI innovation summit",
             "hasImage": false,
             "icon": "Mic",
-            "title": "Smart Quality Summit"
+            "title": "AI Innovation Summit"
           },
           {
-            "description": "Stay at the forefront of the latest trends",
+            "description": "Stay ahead with AI trends and predictions",
             "hasImage": false,
             "icon": "TrendingUp",
-            "title": "2025 Global Quality Outlook"
+            "title": "AI Trends Report 2025"
           },
           {
-            "description": "Your hub for continuous learning",
+            "description": "Comprehensive AI training programs",
             "hasImage": false,
             "icon": "School",
-            "title": "Scilife Academy"
+            "title": "AI Academy"
           },
           {
-            "description": "Curious about your quality maturity? Explore our library here >>",
-            "hasImage": true,
-            "icon": "BarChart",
-            "imgUrl": "",
-            "title": "Quality Maturity Scan"
-          },
-          {
-            "description": "From QMS basics and regulations to implementation, learn everything about managing a quality management system >>",
-            "hasImage": true,
-            "icon": "Book",
-            "imgUrl": "",
-            "title": "The Full Guide to QMS in Pharma"
+            "description": "Assess your organization's AI readiness",
+            "hasImage": false,
+            "icon": "Assessment",
+            "title": "AI Readiness Assessment"
           }
         ],
-        "title": ""
+        "title": "LEARNING"
       }
     ],
     "title": "Resources"
   },
   {
-    "link": "/customers",
+    "link": "/about",
     "submenu": [
       {
-        "columnSize": 5,
+        "columnSize": 4,
         "items": [
           {
-            "description": "Read how companies switching to Scilife",
+            "description": "Meet our team of AI experts and consultants",
             "hasImage": false,
-            "icon": "Comment",
-            "title": "Customer Stories"
+            "icon": "Group",
+            "title": "Our Team"
+          },
+          {
+            "description": "Learn about our AI consulting methodology",
+            "hasImage": false,
+            "icon": "Psychology",
+            "title": "Our Approach"
+          },
+          {
+            "description": "Success stories from our AI implementations",
+            "hasImage": false,
+            "icon": "Star",
+            "title": "Case Studies"
+          },
+          {
+            "description": "Our commitment to responsible AI",
+            "hasImage": false,
+            "icon": "VerifiedUser",
+            "title": "AI Ethics"
           }
         ],
-        "title": "CUSTOMER SPOTLIGHTS"
+        "title": "ABOUT US"
       },
       {
-        "columnSize": 7,
+        "columnSize": 8,
         "items": [
           {
-            "description": "Build your skillset",
-            "hasImage": false,
-            "icon": "MenuBook",
-            "title": "Knowledge Base"
-          },
-          {
-            "description": "Looking for Life Science and Quality resources? Explore our latest blog articles >>",
-            "hasImage": true,
-            "icon": "Lightbulb",
-            "imgUrl": "",
-            "title": "Get inspired by our Blog"
-          }
-        ],
-        "title": "CUSTOMER RESOURCES"
-      }
-    ],
-    "title": "Customers"
-  },
-  {
-    "link": "/company",
-    "submenu": [
-      {
-        "columnSize": 5,
-        "items": [
-          {
-            "description": "Get know us better",
-            "hasImage": false,
-            "icon": "Business",
-            "title": "About Us"
-          },
-          {
-            "description": "Join our epic team!",
+            "description": "Join our team of AI professionals",
             "hasImage": false,
             "icon": "Work",
             "title": "Careers"
           },
           {
-            "description": "Read all about it!",
-            "hasImage": false,
-            "icon": "Newspaper",
-            "title": "Press Releases"
-          }
-        ],
-        "title": "COMPANY"
-      },
-      {
-        "columnSize": 7,
-        "items": [
-          {
-            "description": "Become a Scilife partner today",
+            "description": "Partner with us to deliver AI solutions",
             "hasImage": false,
             "icon": "Handshake",
-            "title": "Partners"
+            "title": "Partnerships"
           },
           {
-            "description": "Remote life, Scilife style!",
+            "description": "Get in touch with our AI experts",
             "hasImage": false,
-            "icon": "Wallpaper",
-            "title": "Custom Backgrounds"
+            "icon": "ContactSupport",
+            "title": "Contact Us"
           },
           {
-            "description": "Our doors are open—Join our epic team and climb on board the Scilife rocket!",
-            "hasImage": true,
-            "icon": "Groups",
-            "imgUrl": "",
-            "title": "Meet our teams"
+            "description": "Stay updated with our latest news",
+            "hasImage": false,
+            "icon": "Newspaper",
+            "title": "News & Press"
+          },
+          {
+            "description": "Follow us on social media",
+            "hasImage": false,
+            "icon": "Share",
+            "title": "Social Media"
           }
         ],
-        "title": "PARTNERS"
+        "title": "CONNECT"
       }
     ],
-    "title": "Company"
+    "title": "About"
   },
   {
     "link": "/pricing",

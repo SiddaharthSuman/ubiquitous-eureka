@@ -19,14 +19,12 @@ const compat = new FlatCompat({
 });
 
 // Process the Next.js extended configs to remove any duplicate jsx-a11y plugin definitions.
-const nextConfigs = compat
-  .extends('next/core-web-vitals', 'next/typescript')
-  .map((cfg) => {
-    if (cfg.plugins && cfg.plugins['jsx-a11y']) {
-      delete cfg.plugins['jsx-a11y'];
-    }
-    return cfg;
-  });
+const nextConfigs = compat.extends('next/core-web-vitals', 'next/typescript').map((cfg) => {
+  if (cfg.plugins && cfg.plugins['jsx-a11y']) {
+    delete cfg.plugins['jsx-a11y'];
+  }
+  return cfg;
+});
 
 const eslintConfig = [
   jsxA11yPlugin.flatConfigs.recommended,
@@ -59,14 +57,7 @@ const eslintConfig = [
       'import/order': [
         'warn',
         {
-          groups: [
-            'builtin',
-            'external',
-            'internal',
-            'parent',
-            'sibling',
-            'index',
-          ],
+          groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
           'newlines-between': 'always',
         },
       ],
@@ -81,10 +72,7 @@ const eslintConfig = [
       ],
       'react-hooks/exhaustive-deps': 'warn',
       'react-hooks/rules-of-hooks': 'error',
-      'sort-destructure-keys/sort-destructure-keys': [
-        'warn',
-        { caseSensitive: false },
-      ],
+      'sort-destructure-keys/sort-destructure-keys': ['warn', { caseSensitive: false }],
       'jsonc/sort-keys': [
         'error',
         'asc',

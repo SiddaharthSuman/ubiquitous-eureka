@@ -19,7 +19,7 @@ export default function Home() {
           sx={{ fontWeight: '500', letterSpacing: -2 }}
           variant="h3"
         >
-          Plans and Pricing
+          AI Consulting Services
         </Typography>
       </Grid>
       <Grid container className={styles.pricingContainer} size={12}>
