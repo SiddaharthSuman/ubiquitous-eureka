@@ -1,0 +1,11 @@
+.footer {
+  padding-block: 3rem 2rem; // theme.spacing(6) = 48px = 3rem // theme.spacing(4) = 32px = 2rem
+  margin-block-start: auto;
+  background-color: var(--surface-elevated);
+  border-block-start: 1px solid var(--border);
+}
+
+.divider {
+  margin: 1.5rem 0; // theme.spacing(3) = 24px = 1.5rem
+  border-color: var(--border);
+}

@@ -1,0 +1,10 @@
+.footerSection {
+  margin-block-end: 2rem; // theme.spacing(4) = 32px = 2rem
+}
+
+.footerTitle {
+  margin-block-end: 1rem; // theme.spacing(2) = 16px = 1rem
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}

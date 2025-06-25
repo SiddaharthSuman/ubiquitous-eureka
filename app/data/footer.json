@@ -1,0 +1,26 @@
+{
+  "bottomLinks": [
+    { "href": "/privacy", "title": "Privacy Policy" },
+    { "href": "/terms", "title": "Terms of Service" }
+  ],
+  "company": {
+    "description": "Transforming businesses through strategic AI implementation and innovative machine learning solutions.",
+    "name": "AI Consulting"
+  },
+  "companyLinks": [
+    { "href": "/about", "title": "About Us" },
+    { "href": "/contact", "title": "Contact" },
+    { "href": "/privacy", "title": "Privacy Policy" },
+    { "href": "/terms", "title": "Terms of Service" }
+  ],
+  "contactInfo": {
+    "email": "hello@aiconsulting.com",
+    "location": "San Francisco, CA"
+  },
+  "services": [
+    { "href": "/services", "title": "AI Strategy Consulting" },
+    { "href": "/services", "title": "Machine Learning Development" },
+    { "href": "/services", "title": "Data Analytics & BI" },
+    { "href": "/services", "title": "Process Automation" }
+  ]
+}

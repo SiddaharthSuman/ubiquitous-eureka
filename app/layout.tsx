@@ -6,7 +6,7 @@ import { Container } from '@mui/material';
 import './styles/globals.scss';
 import ThemeRegistry from './themes/ThemeRegistry';
 import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
+import { Footer } from './components/footer';
 
 const playfair = Yanone_Kaffeesatz({
   subsets: ['latin'],

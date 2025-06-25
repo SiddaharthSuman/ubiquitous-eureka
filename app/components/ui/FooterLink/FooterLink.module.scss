@@ -1,0 +1,12 @@
+.footerLink {
+  display: block;
+  margin-block-end: 0.5rem; // theme.spacing(1) = 8px = 0.5rem
+  color: var(--text-secondary) !important; // Override global link color
+  text-decoration: none !important; // Ensure no underline
+  transition: transform 0.2s ease; // More performant transition
+
+  &:hover {
+    color: var(--primary-orange) !important; // Override global hover color
+    transform: translateX(2px); // Subtle slide effect on hover
+  }
+}

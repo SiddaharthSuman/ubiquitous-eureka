@@ -1,0 +1,10 @@
+.socialIconButton {
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+
+  &:hover {
+    color: white;
+    background-color: var(--primary-orange);
+    border-color: var(--primary-orange);
+  }
+}
