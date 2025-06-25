@@ -12,6 +12,8 @@ import {
 } from '@mui/material';
 import { MouseEvent, useRef, useState } from 'react';
 
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
+
 import NavButton from './NavButton/NavButton';
 import StyledAppBar from './StyledAppBar/StyledAppBar';
 import styles from './Navigation.module.scss';
@@ -44,9 +46,9 @@ const StyledLogo = styled(Typography)<TypographyProps>(({}) => ({
 
 const DemoButton = styled(Button)<ButtonProps>(({}) => ({
   '&:hover': {
-    backgroundColor: '#0d1752',
+    backgroundColor: '#e6733d',
   },
-  backgroundColor: '#1a237e',
+  backgroundColor: '#ff8a4c',
   color: 'white',
   fontWeight: 500,
   marginInlineStart: 'auto',
@@ -102,7 +104,7 @@ const Navigation = ({ menuItems }: NavigationProps) => {
         <Container fixed>
           <Toolbar disableGutters className={styles.toolbar}>
             <StyledLogo component="div" variant="h6">
-              Biogentic
+              AI Consulting
             </StyledLogo>
             <Box ref={menuParent} className={styles.menuGroup}>
               {menuItems.map((item) => (
@@ -115,6 +117,7 @@ const Navigation = ({ menuItems }: NavigationProps) => {
                 </NavButton>
               ))}
             </Box>
+            <ThemeToggle />
             <DemoButton variant="contained">Book a Demo</DemoButton>
           </Toolbar>
         </Container>
