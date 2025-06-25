@@ -1,6 +1,6 @@
 [
   {
-    "link": "/",
+    "link": "/services",
     "submenu": [
       {
         "columnSize": 4,
@@ -31,7 +31,7 @@
             "title": "AI Solutions Demo >>"
           }
         ],
-        "title": "SERVICES"
+        "title": "CORE SERVICES"
       },
       {
         "columnSize": 8,
@@ -187,148 +187,74 @@
     "title": "Solutions"
   },
   {
-    "link": "/resources",
+    "link": "/about",
+    "title": "About"
+  },
+  {
+    "link": "/blog",
     "submenu": [
       {
-        "columnSize": 4,
+        "columnSize": 6,
         "items": [
           {
             "description": "Latest insights and trends in AI technology",
             "hasImage": false,
             "icon": "Article",
-            "title": "AI Blog"
+            "title": "AI Trends & Insights"
           },
           {
-            "description": "Comprehensive AI terminology and concepts",
+            "description": "Technical deep dives into AI implementation",
             "hasImage": false,
-            "icon": "MenuBook",
-            "title": "AI Glossary"
+            "icon": "Code",
+            "title": "Technical Guides"
           },
           {
-            "description": "Guides and tools for AI implementation",
+            "description": "Business strategy and AI transformation",
             "hasImage": false,
-            "icon": "Build",
-            "title": "AI Guides & Tools"
+            "icon": "Business",
+            "title": "Business Strategy"
           },
           {
-            "description": "Best practices for AI project management",
+            "description": "AI ethics and responsible development",
             "hasImage": false,
-            "icon": "Psychology",
-            "title": "AI Project Management"
-          }
-        ],
-        "title": "RESOURCES"
-      },
-      {
-        "columnSize": 8,
-        "items": [
-          {
-            "description": "Join our AI workshops and webinars",
-            "hasImage": false,
-            "icon": "Event",
-            "title": "AI Workshops & Webinars"
-          },
-          {
-            "description": "Annual AI innovation summit",
-            "hasImage": false,
-            "icon": "Mic",
-            "title": "AI Innovation Summit"
-          },
-          {
-            "description": "Stay ahead with AI trends and predictions",
-            "hasImage": false,
-            "icon": "TrendingUp",
-            "title": "AI Trends Report 2025"
-          },
-          {
-            "description": "Comprehensive AI training programs",
-            "hasImage": false,
-            "icon": "School",
-            "title": "AI Academy"
-          },
-          {
-            "description": "Assess your organization's AI readiness",
-            "hasImage": false,
-            "icon": "Assessment",
-            "title": "AI Readiness Assessment"
-          }
-        ],
-        "title": "LEARNING"
-      }
-    ],
-    "title": "Resources"
-  },
-  {
-    "link": "/about",
-    "submenu": [
-      {
-        "columnSize": 4,
-        "items": [
-          {
-            "description": "Meet our team of AI experts and consultants",
-            "hasImage": false,
-            "icon": "Group",
-            "title": "Our Team"
-          },
-          {
-            "description": "Learn about our AI consulting methodology",
-            "hasImage": false,
-            "icon": "Psychology",
-            "title": "Our Approach"
-          },
-          {
-            "description": "Success stories from our AI implementations",
-            "hasImage": false,
-            "icon": "Star",
-            "title": "Case Studies"
-          },
-          {
-            "description": "Our commitment to responsible AI",
-            "hasImage": false,
-            "icon": "VerifiedUser",
+            "icon": "Security",
             "title": "AI Ethics"
           }
         ],
-        "title": "ABOUT US"
+        "title": "BLOG CATEGORIES"
       },
       {
-        "columnSize": 8,
+        "columnSize": 6,
         "items": [
           {
-            "description": "Join our team of AI professionals",
+            "description": "Real-world AI implementation case studies",
             "hasImage": false,
-            "icon": "Work",
-            "title": "Careers"
+            "icon": "Assignment",
+            "title": "Case Studies"
           },
           {
-            "description": "Partner with us to deliver AI solutions",
+            "description": "Expert interviews and industry perspectives",
             "hasImage": false,
-            "icon": "Handshake",
-            "title": "Partnerships"
+            "icon": "RecordVoiceOver",
+            "title": "Expert Interviews"
           },
           {
-            "description": "Get in touch with our AI experts",
+            "description": "AI research papers and technical analysis",
             "hasImage": false,
-            "icon": "ContactSupport",
-            "title": "Contact Us"
+            "icon": "Science",
+            "title": "Research Papers"
           },
           {
-            "description": "Stay updated with our latest news",
+            "description": "AI news and industry updates",
             "hasImage": false,
             "icon": "Newspaper",
-            "title": "News & Press"
-          },
-          {
-            "description": "Follow us on social media",
-            "hasImage": false,
-            "icon": "Share",
-            "title": "Social Media"
+            "title": "AI News"
           }
         ],
-        "title": "CONNECT"
+        "title": "RESOURCES"
       }
     ],
-    "title": "About"
+    "title": "Blog"
   },
   {
     "link": "/pricing",
@@ -336,6 +262,6 @@
   },
   {
     "link": "/contact",
-    "title": "Contact us"
+    "title": "Contact"
   }
 ]

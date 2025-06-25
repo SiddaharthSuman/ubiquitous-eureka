@@ -1,0 +1,337 @@
+.servicesPage {
+  min-block-size: 100vh;
+}
+
+// Hero Section
+.hero {
+  position: relative;
+  padding: 120px 0 80px;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--background) 0%, var(--surface-elevated) 100%);
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    content: '';
+    background:
+      radial-gradient(circle at 30% 20%, rgb(255 138 76 / 10%) 0%, transparent 50%),
+      radial-gradient(circle at 70% 80%, rgb(251 146 60 / 10%) 0%, transparent 50%);
+  }
+}
+
+.heroTitle {
+  margin-block-end: 24px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+
+  .highlight {
+    background: linear-gradient(135deg, var(--primary-orange), var(--cta-highlight));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.heroSubtitle {
+  max-inline-size: 800px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+// Services Overview
+.servicesOverview {
+  padding: 80px 0;
+  background: var(--surface);
+}
+
+.serviceCard {
+  block-size: 100%;
+  padding: 40px 24px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    border-color: var(--primary-orange);
+    box-shadow: 0 12px 40px rgb(0 0 0 / 10%);
+    transform: translateY(-4px);
+  }
+}
+
+.serviceIcon {
+  margin-block-end: 24px;
+  font-size: 3rem !important;
+  color: var(--primary-orange);
+}
+
+.serviceTitle {
+  margin-block-end: 16px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.serviceDescription {
+  margin-block-end: 24px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.serviceFeatures {
+  padding: 0;
+  margin: 0;
+  text-align: start;
+  list-style: none;
+
+  li {
+    position: relative;
+    padding: 8px 0;
+    padding-inline-start: 20px;
+    color: var(--text-secondary);
+
+    &::before {
+      position: absolute;
+      inset-inline-start: 0;
+      font-weight: bold;
+      color: var(--primary-orange);
+      content: '✓';
+    }
+  }
+}
+
+// Specialized Services
+.specializedServices {
+  padding: 80px 0;
+  background: var(--surface-elevated);
+}
+
+.sectionTitle {
+  margin-block-end: 16px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.sectionSubtitle {
+  max-inline-size: 600px;
+  margin-block-end: 64px;
+  margin-inline: auto;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.specializedGrid {
+  margin-block-start: 48px;
+}
+
+.specializedCard {
+  block-size: 100%;
+  padding: 40px 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    border-color: var(--primary-orange);
+    box-shadow: 0 12px 40px rgb(0 0 0 / 10%);
+    transform: translateY(-4px);
+  }
+}
+
+.specializedIcon {
+  margin-block-end: 24px;
+  font-size: 2.5rem !important;
+  color: var(--primary-orange);
+}
+
+.specializedTitle {
+  margin-block-end: 16px;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.specializedDescription {
+  margin-block-end: 24px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.specializedFeatures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.featureTag {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--primary-orange);
+  background: rgb(255 138 76 / 10%);
+  border: 1px solid rgb(255 138 76 / 20%);
+  border-radius: 20px;
+}
+
+// Process Section
+.process {
+  padding: 80px 0;
+  background: var(--surface);
+}
+
+.processGrid {
+  margin-block-start: 48px;
+}
+
+.processStep {
+  position: relative;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.stepNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 60px;
+  block-size: 60px;
+  margin: 0 auto 24px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, var(--primary-orange), var(--cta-highlight));
+  border-radius: 50%;
+}
+
+.stepTitle {
+  margin-block-end: 16px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.stepDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+// CTA Section
+.cta {
+  padding: 80px 0;
+  color: white;
+  background: linear-gradient(135deg, var(--primary-orange), var(--cta-highlight));
+}
+
+.ctaContent {
+  text-align: center;
+}
+
+.ctaTitle {
+  margin-block-end: 16px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white !important;
+}
+
+.ctaSubtitle {
+  max-inline-size: 600px;
+  margin-block-end: 40px;
+  margin-inline: auto;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: rgb(255 255 255 / 90%) !important;
+}
+
+.ctaButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.primaryButton {
+  padding: 12px 32px !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: var(--primary-orange) !important;
+  text-transform: none !important;
+  background: white !important;
+  border-radius: 8px !important;
+
+  &:hover {
+    background: rgb(255 255 255 / 90%) !important;
+    transform: translateY(-2px);
+  }
+}
+
+.secondaryButton {
+  padding: 12px 32px !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: white !important;
+  text-transform: none !important;
+  border: 2px solid white !important;
+  border-radius: 8px !important;
+
+  &:hover {
+    background: rgb(255 255 255 / 10%) !important;
+    border-color: white !important;
+    transform: translateY(-2px);
+  }
+}
+
+// Responsive Design
+@media (width <= 768px) {
+  .hero {
+    padding: 100px 0 60px;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .sectionSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .ctaTitle {
+    font-size: 2rem;
+  }
+
+  .ctaSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    inline-size: 100%;
+    max-inline-size: 300px;
+  }
+}

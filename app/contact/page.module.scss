@@ -1,0 +1,302 @@
+.contactPage {
+  min-block-size: 100vh;
+}
+
+// Hero Section
+.hero {
+  position: relative;
+  padding: 120px 0 80px;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--background) 0%, var(--surface-elevated) 100%);
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    content: '';
+    background:
+      radial-gradient(circle at 30% 20%, rgb(255 138 76 / 10%) 0%, transparent 50%),
+      radial-gradient(circle at 70% 80%, rgb(251 146 60 / 10%) 0%, transparent 50%);
+  }
+}
+
+.heroTitle {
+  margin-block-end: 24px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+
+  .highlight {
+    background: linear-gradient(135deg, var(--primary-orange), var(--cta-highlight));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.heroSubtitle {
+  max-inline-size: 600px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+// Contact Form Section
+.contactForm {
+  padding: 80px 0;
+  background: var(--surface);
+}
+
+.formPaper {
+  padding: 48px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 5%);
+}
+
+.formTitle {
+  margin-block-end: 8px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.formSubtitle {
+  margin-block-end: 32px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.form {
+  margin-block-start: 32px;
+}
+
+.formField {
+  // MUI styles will be handled via sx prop
+}
+
+.submitButton {
+  inline-size: 100% !important;
+  padding: 12px 32px !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: white !important;
+  text-transform: none !important;
+  background: linear-gradient(135deg, var(--primary-orange), var(--cta-highlight)) !important;
+  border-radius: 8px !important;
+
+  &:hover {
+    box-shadow: 0 8px 25px rgb(255 138 76 / 30%);
+    transform: translateY(-2px);
+  }
+}
+
+// Contact Info
+.contactInfo {
+  block-size: fit-content;
+  padding: 48px 32px;
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.infoTitle {
+  margin-block-end: 32px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.infoItem {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-block-end: 32px;
+
+  &:last-child {
+    margin-block-end: 0;
+  }
+}
+
+.infoIcon {
+  flex-shrink: 0;
+  margin-block-start: 4px;
+  font-size: 1.5rem !important;
+  color: var(--primary-orange);
+}
+
+.infoLabel {
+  margin-block-end: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.infoValue {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+// Offices Section
+.offices {
+  padding: 80px 0;
+  background: var(--surface-elevated);
+}
+
+.sectionTitle {
+  margin-block-end: 16px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.sectionSubtitle {
+  max-inline-size: 600px;
+  margin-block-end: 64px;
+  margin-inline: auto;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.officesGrid {
+  margin-block-start: 48px;
+}
+
+.officeCard {
+  block-size: 100%;
+  padding: 40px 24px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    border-color: var(--primary-orange);
+    box-shadow: 0 12px 40px rgb(0 0 0 / 10%);
+    transform: translateY(-4px);
+  }
+}
+
+.officeIcon {
+  margin-block-end: 24px;
+  font-size: 2.5rem !important;
+  color: var(--primary-orange);
+}
+
+.officeTitle {
+  margin-block-end: 16px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.officeAddress {
+  margin-block-end: 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.officePhone {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary-orange);
+}
+
+// FAQ Section
+.faq {
+  padding: 80px 0;
+  background: var(--surface);
+}
+
+.faqGrid {
+  margin-block-start: 48px;
+}
+
+.faqItem {
+  block-size: 100%;
+  padding: 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    border-color: var(--primary-orange);
+    box-shadow: 0 8px 25px rgb(0 0 0 / 10%);
+    transform: translateY(-2px);
+  }
+}
+
+.faqQuestion {
+  margin-block-end: 16px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.faqAnswer {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+// Responsive Design
+@media (width <= 768px) {
+  .hero {
+    padding: 100px 0 60px;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .sectionSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .formPaper {
+    padding: 32px 24px;
+  }
+
+  .formTitle {
+    font-size: 1.75rem;
+  }
+
+  .contactInfo {
+    padding: 32px 24px;
+    margin-block-start: 32px;
+  }
+
+  .infoTitle {
+    font-size: 1.5rem;
+  }
+
+  .officeCard {
+    padding: 32px 20px;
+  }
+
+  .faqItem {
+    padding: 24px 20px;
+  }
+}
