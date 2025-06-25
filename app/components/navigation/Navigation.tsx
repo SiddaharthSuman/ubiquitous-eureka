@@ -1,15 +1,6 @@
 'use client';
 
-import {
-  Box,
-  Button,
-  ButtonProps,
-  Container,
-  styled,
-  Toolbar,
-  Typography,
-  TypographyProps,
-} from '@mui/material';
+import { Box, Button, Container, Toolbar, Typography } from '@mui/material';
 import { MouseEvent, useRef, useState } from 'react';
 
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
@@ -36,25 +27,6 @@ interface NavigationProps {
     title: string;
   }>;
 }
-
-const StyledLogo = styled(Typography)<TypographyProps>(({}) => ({
-  fontFamily: 'var(--font-playfair)',
-  fontSize: '2.5rem',
-  lineHeight: 1,
-  paddingInline: '1rem',
-}));
-
-const DemoButton = styled(Button)<ButtonProps>(({}) => ({
-  '&:hover': {
-    backgroundColor: '#e6733d',
-  },
-  backgroundColor: '#ff8a4c',
-  color: 'white',
-  fontWeight: 500,
-  marginInlineStart: 'auto',
-  padding: '8px 20px',
-  textTransform: 'none',
-}));
 
 const Navigation = ({ menuItems }: NavigationProps) => {
   const [open, setOpen] = useState(false);
@@ -101,11 +73,23 @@ const Navigation = ({ menuItems }: NavigationProps) => {
         onMouseOver={handleMouseHover}
       />
       <StyledAppBar position="fixed">
-        <Container fixed>
+        <Container maxWidth="lg">
           <Toolbar disableGutters className={styles.toolbar}>
-            <StyledLogo component="div" variant="h6">
+            <Typography
+              className={styles.logo}
+              component="div"
+              variant="h6"
+              sx={{
+                fontFamily: 'var(--font-playfair), "Yanone Kaffeesatz", sans-serif !important',
+                fontSize: '2.5rem !important',
+                fontWeight: '600 !important',
+                lineHeight: '1 !important',
+                color: '#1e293b !important',
+                letterSpacing: '-0.02em !important',
+              }}
+            >
               AI Consulting
-            </StyledLogo>
+            </Typography>
             <Box ref={menuParent} className={styles.menuGroup}>
               {menuItems.map((item) => (
                 <NavButton
@@ -118,7 +102,9 @@ const Navigation = ({ menuItems }: NavigationProps) => {
               ))}
             </Box>
             <ThemeToggle />
-            <DemoButton variant="contained">Book a Demo</DemoButton>
+            <Button className={styles.demoButton} variant="contained">
+              Book a Demo
+            </Button>
           </Toolbar>
         </Container>
       </StyledAppBar>

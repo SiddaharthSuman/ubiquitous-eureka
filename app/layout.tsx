@@ -8,9 +8,11 @@ import ThemeRegistry from './themes/ThemeRegistry';
 import Header from './components/header/Header';
 import { Footer } from './components/footer';
 
-const playfair = Yanone_Kaffeesatz({
+const yanoneKaffeesatz = Yanone_Kaffeesatz({
   subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600', '700'],
   variable: '--font-playfair',
+  display: 'swap',
 });
 
 const geistSans = Geist({
@@ -39,7 +41,7 @@ export default function RootLayout({
       <head>
         <meta content="initial-scale=1, width=device-width" name="viewport" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${yanoneKaffeesatz.variable}`}>
         <ThemeRegistry>
           <Header />
           <Container component={'main'} maxWidth="lg">

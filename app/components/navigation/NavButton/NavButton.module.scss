@@ -1,0 +1,18 @@
+.navButton {
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-transform: none;
+  border-radius: 6px;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+
+  &:hover {
+    color: var(--primary-orange);
+    background-color: var(--surface-elevated);
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+}

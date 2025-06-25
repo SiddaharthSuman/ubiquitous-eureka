@@ -1,29 +1,49 @@
 .submenuDiv {
   position: fixed;
-  z-index: -1;
-
-  // visibility: hidden;
-  inline-size: 100%;
-  margin-block-start: 82px;
+  inset-block-start: 80px;
+  inset-inline: 0;
+  z-index: 999;
+  visibility: hidden;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transform: translateY(-10px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .submenuOpen {
-  // visibility: visible;
-  z-index: 100;
-  opacity: 100;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .submenuContainer {
-  // display: 'flex';
-  // flex-direction: column;
-  // padding-inline: 48px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 24px;
+  margin: 0 24px;
+  color: var(--text-primary);
+  background-color: rgb(255 255 255 / 98%);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 15%);
+  backdrop-filter: blur(20px);
 
-  // color: white;
-  // background-color: white;
-  // border-radius: 20px;
+  // Dark mode support
+  .dark & {
+    background-color: rgb(30 41 59 / 98%);
+    border-color: var(--border);
+  }
+}
 
-  // px: '40px',
-  // py: 3,
+.submenuTitle {
+  margin-block-end: 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.submenuGrid {
+  display: grid;
+  gap: 40px 28px;
 }

@@ -1,17 +1,41 @@
 'use client';
 
-import { Button, styled } from '@mui/material';
+import { Button } from '@mui/material';
+import React from 'react';
 
-const NavButton = styled(Button)(({}) => ({
-  '&:hover': {
-    backgroundColor: 'transparent',
-    color: '#5e35b1',
-  },
-  color: 'black',
-  fontSize: '1rem',
-  fontWeight: 500,
-  padding: '8px 16px',
-  textTransform: 'none',
-}));
+import styles from './NavButton.module.scss';
+
+interface NavButtonProps {
+  children: React.ReactNode;
+  onMouseOut?: () => void;
+  onMouseOver?: (event: React.MouseEvent<HTMLElement>) => void;
+}
+
+const NavButton: React.FC<NavButtonProps> = ({ children, onMouseOut, onMouseOver }) => {
+  return (
+    <Button
+      className={styles.navButton}
+      sx={{
+        padding: '8px 16px !important',
+        fontSize: '1.1rem !important',
+        fontWeight: '500 !important',
+        color: '#64748b !important',
+        textTransform: 'none !important',
+        borderRadius: '6px !important',
+        transition: 'transform 0.2s ease, opacity 0.2s ease !important',
+        '&:hover': {
+          color: '#ff8a4c !important',
+          backgroundColor: '#f1f5f9 !important',
+          opacity: '0.9 !important',
+          transform: 'translateY(-1px) !important',
+        },
+      }}
+      onMouseOut={onMouseOut}
+      onMouseOver={onMouseOver}
+    >
+      {children}
+    </Button>
+  );
+};
 
 export default NavButton;

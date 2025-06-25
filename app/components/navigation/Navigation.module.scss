@@ -1,11 +1,39 @@
 .toolbar {
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  min-block-size: 80px;
+  padding: 0 24px;
 }
 
 .menuGroup {
-  display: 'flex';
-  align-items: 'center';
-  padding-inline: 24px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.logo {
+  font-family: var(--font-playfair), 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.demoButton {
+  padding: 12px 24px;
+  font-weight: 500;
+  color: white;
+  text-transform: none;
+  background-color: var(--primary-orange);
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    background-color: var(--primary-orange-dark);
+    transform: translateY(-1px);
+  }
 }
 
 .popper {
