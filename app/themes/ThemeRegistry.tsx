@@ -33,11 +33,6 @@ const theme = createTheme({
       default: '#f8fafc', // Light background
       paper: '#ffffff', // Surface/Cards
     },
-    surface: {
-      main: '#ffffff',
-      elevated: '#f1f5f9',
-      border: '#e2e8f0',
-    },
     text: {
       primary: '#1e293b', // Primary text
       secondary: '#64748b', // Muted text
@@ -172,73 +167,9 @@ const theme = createTheme({
   ],
 });
 
-// Dark theme variant
-const darkTheme = createTheme({
-  ...theme,
-  palette: {
-    mode: 'dark',
-    primary: {
-      main: '#ff8a4c', // Primary Orange
-      light: '#ffa366',
-      dark: '#e6733d',
-      contrastText: '#ffffff',
-    },
-    secondary: {
-      main: '#64748b', // Accent Slate
-      light: '#94a3b8',
-      dark: '#475569',
-      contrastText: '#ffffff',
-    },
-    background: {
-      default: '#0f172a', // Deep slate background
-      paper: '#1e293b', // Elevated slate for cards
-    },
-    surface: {
-      main: '#1e293b',
-      elevated: '#334155',
-      border: '#334155',
-    },
-    text: {
-      primary: '#f1f5f9', // High contrast white
-      secondary: '#94a3b8', // Muted text
-    },
-    action: {
-      active: '#fb923c', // CTA/Highlight
-      hover: '#ffa366',
-      selected: '#ff8a4c',
-    },
-    divider: '#334155',
-  },
-  components: {
-    ...theme.components,
-    MuiAppBar: {
-      styleOverrides: {
-        root: {
-          backgroundColor: 'rgba(15, 23, 42, 0.8)',
-          backdropFilter: 'blur(8px)',
-          borderBottom: '1px solid #334155',
-        },
-      },
-    },
-    MuiCard: {
-      styleOverrides: {
-        root: {
-          borderRadius: 12,
-          boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2)',
-          border: '1px solid #334155',
-        },
-      },
-    },
-  },
-});
-
 const ThemeRegistry = ({ children }: { children: ReactNode }) => {
-  // For now, we'll use the light theme by default
-  // You can add a theme toggle later
-  const currentTheme = theme; // or darkTheme for dark mode
-
   return (
-    <ThemeProvider theme={currentTheme}>
+    <ThemeProvider theme={theme}>
       {/* <CssBaseline /> */}
       {children}
     </ThemeProvider>

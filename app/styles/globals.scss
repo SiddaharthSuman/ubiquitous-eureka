@@ -127,3 +127,11 @@ a {
 .borderDefault {
   border-color: var(--border);
 }
+
+.bgCtaHighlight {
+  background-color: var(--cta-highlight);
+}
+
+.textCtaHighlight {
+  color: var(--cta-highlight);
+}

@@ -14,18 +14,14 @@ export default function Home() {
     // <Container >
     <Grid container className={styles.container} spacing={2}>
       <Grid size={12}>
-        <Typography
-          className={styles.heading}
-          sx={{ fontWeight: '500', letterSpacing: -2 }}
-          variant="h3"
-        >
+        <Typography className={styles.heading} variant="h1">
           AI Consulting Services
         </Typography>
       </Grid>
       <Grid container className={styles.pricingContainer} size={12}>
         {pricingData.pricingTiers.map((tier, index) => (
           <Grid key={index} size={12 / pricingData.pricingTiers.length} sx={{ display: 'flex' }}>
-            <PricingTierCard data={tier}></PricingTierCard>
+            <PricingTierCard data={tier} />
           </Grid>
         ))}
       </Grid>

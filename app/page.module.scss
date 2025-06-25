@@ -1,21 +1,30 @@
-.box {
-  position: absolute;
-  inline-size: 100px;
-  margin-inline-start: 0;
-  color: red;
-}
-
 .container {
   align-content: flex-start;
-  block-size: 100dvh;
+  min-block-size: 100vh;
+  padding: 2rem 0;
   margin-block-start: 80px;
+  background-color: var(--background);
 }
 
 .heading {
-  padding-block: 24px;
+  padding: 2rem 0;
+  margin-block-end: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
   text-align: center;
+
+  @media (width <= 768px) {
+    padding: 1.5rem 0;
+    font-size: 2rem;
+  }
 }
 
 .pricingContainer {
-  margin-block-start: 0;
+  gap: 2rem;
+  margin-block-start: 2rem;
+
+  @media (width <= 768px) {
+    gap: 1.5rem;
+  }
 }

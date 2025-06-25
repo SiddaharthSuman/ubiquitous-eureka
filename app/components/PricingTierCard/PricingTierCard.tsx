@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Typography } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 
 import InfoIcon from '../InfoIcon/InfoIcon';
 
@@ -28,65 +28,41 @@ interface PricingTierCardProps {
 
 const PricingTierCard = ({ data }: PricingTierCardProps) => {
   return (
-    <Box className={styles.cardContainer} sx={{ display: 'flex', flexDirection: 'column', mt: 2 }}>
-      <Typography
-        sx={{
-          fontSize: 20,
-          fontWeight: 500,
-          py: 1,
-          textAlign: 'center',
-          visibility: data.highlight ? 'visible' : 'hidden',
-        }}
-      >
-        - Most Popular -
-      </Typography>
+    <Box className={styles.cardContainer}>
+      {data.highlight && <Typography className={styles.popularBadge}>- Most Popular -</Typography>}
 
-      <Box
-        sx={{
-          backgroundColor: data.color,
-          borderColor: data.borderColor,
-          borderRadius: 4,
-          borderStyle: 'solid',
-          borderWidth: 1,
-          color: data.textColor,
-          display: 'flex',
-          flexDirection: 'column',
-          height: '100%',
-          justifyContent: 'space-between',
-          padding: 2,
-        }}
-      >
+      <Box className={data.highlight ? styles.cardHighlighted : styles.card}>
         <Box>
-          <Box sx={{ pb: 2 }}>
-            <Typography sx={{ fontSize: '38px' }}>{data.name}</Typography>
-            <Typography sx={{ fontSize: '18px', pt: 1 }}>{data.description}</Typography>
+          <Box className={styles.cardHeader}>
+            <Typography className={styles.tierName}>{data.name}</Typography>
+            <Typography className={styles.tierDescription}>{data.description}</Typography>
           </Box>
 
-          <Grid container gap={1} sx={{ mb: '56px', mt: '24px' }}>
+          <Box className={styles.featuresList}>
             {data.features.map((feature, index) => (
-              <Grid
-                key={index}
-                size={12}
-                sx={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between' }}
-              >
-                <Typography sx={{ fontSize: '18px', fontWeight: '500', textWrap: 'pretty' }}>
-                  {feature.name}
-                </Typography>
+              <Box key={index} className={styles.featureItem}>
+                <Typography className={styles.featureName}>{feature.name}</Typography>
                 {feature.hasInfoIcon && <InfoIcon tooltipText={feature.tooltip} />}
-              </Grid>
+              </Box>
             ))}
-          </Grid>
+          </Box>
 
-          {data.notes.map((note, index) => (
-            <Typography key={index} variant="body1">
-              {note}
-            </Typography>
-          ))}
+          {data.notes.length > 0 && (
+            <Box className={styles.notes}>
+              {data.notes.map((note, index) => (
+                <Typography key={index} className={styles.note}>
+                  {note}
+                </Typography>
+              ))}
+            </Box>
+          )}
         </Box>
 
         <Button
-          sx={{ borderColor: data.textColor, color: data.textColor, textTransform: 'none' }}
-          variant="outlined"
+          fullWidth
+          className={styles.ctaButton}
+          color={data.ctaButton.color as 'primary' | 'secondary'}
+          variant={data.ctaButton.variant as 'outlined' | 'contained'}
         >
           {data.ctaButton.text}
         </Button>
